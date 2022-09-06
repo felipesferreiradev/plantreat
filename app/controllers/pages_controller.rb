@@ -6,4 +6,7 @@ class PagesController < ApplicationController
 
   def dashboard
   end
+
+  def options
+  end
 end

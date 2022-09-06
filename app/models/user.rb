@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_many :plants, dependent: :destroy
 
-  validates :name, presence: true
+  validates :username, presence: true
 end
