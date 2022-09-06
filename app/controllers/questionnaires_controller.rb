@@ -1,5 +1,5 @@
 class QuestionnairesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :show ]
+  skip_before_action :authenticate_user!, only: [ :show, :recommendation, :questionnaire ]
 
   def questionnaire
   end
@@ -8,6 +8,5 @@ class QuestionnairesController < ApplicationController
   end
 
   def recommendation
-
   end
 end
