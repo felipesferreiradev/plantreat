@@ -1,0 +1,40 @@
+h2 {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #725B39;
+}
+.signup_bg{
+  background: white;
+  height: 100vh;
+}
+.form-inputs{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #725B39;
+}
+
+.form-actions{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+
+.form-control{
+  background-color: #E9FFE3;
+  border-radius: 45px;
+}
+
+.signup_logo{
+  height: 100px;
+  padding: 15px;
+  color: #725B39;
+}
