@@ -3,6 +3,8 @@
 #
 # Examples:
 #
+puts "seeding"
+
 peace_lily = Plant.new(
   name: "Peace Lily",
   water: "Light Watering",
@@ -502,3 +504,5 @@ climbing_rose_white = Plant.new(
   popular choice in skincare."
 )
 climbing_rose_white.save!
+
+puts "Seeding done."
