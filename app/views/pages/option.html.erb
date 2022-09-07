@@ -1,2 +1,9 @@
-<button> <%= link_to 'I own a plant', questionnaire_path %> </button>
-<button> <%= link_to 'I am looking for plants', questionnaire_path %> </button>
+<div class="d-flex flex-column gap-3 align-items-center ">
+  <%= image_tag "plantreat_logo.png", :class => "picture"%>
+  <h3>Your way for blooming plants</h3>
+</div>
+
+<div class="d-flex flex-column gap-3 align-items-center m-5">
+    <%= link_to 'I own a plant', questionnaire_path, class:"btn btn-success"%>
+    <%= link_to 'I am looking for plants', questionnaire_path, class:"btn btn-success" %>
+</div>
