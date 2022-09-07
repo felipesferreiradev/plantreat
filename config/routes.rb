@@ -4,7 +4,8 @@ Rails.application.routes.draw do
 
   get "dashboard", to: "pages#dashboard"
   get "option", to: "pages#option"
-  get "questionnaire", to: "questionnaires#questionnaire"
+  get "questionnaire_own_a_plant", to: "questionnaires#questionnaire_own_a_plant"
+  get "questionnaire_looking_for_a_plant", to: "questionnaires#questionnaire_looking_for_a_plant"
   get "recommendation", to: "questionnaires#recommendation"
   get "leaderboard", to: "leaderboards#leaderboard"
 
