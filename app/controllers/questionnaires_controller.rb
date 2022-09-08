@@ -11,5 +11,6 @@ class QuestionnairesController < ApplicationController
   end
 
   def recommendation
+    @plants = Plant.all
   end
 end
