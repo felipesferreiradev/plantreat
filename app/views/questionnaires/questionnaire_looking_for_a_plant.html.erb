@@ -1,3 +1,44 @@
-Looking for a Plant
+<div class="question-bg">
+  <%= render "shared/navbar" %>
+  <%= image_tag "plantreat_logo.png", :class => "signup_logo"%>
+  <div class="question1-bg d-flex flex-column align-items-center p-5">
+    <h3 class="q-title mt-0">We have some questions for you</h3>
+    <form action="submit" class="d-flex flex-column align-items-center">
 
-<button> <%= link_to 'Submit', recommendation_path %>  </button>
+      <label for="plants_type" class="mt-4" style="color: #725B39">Which type of plants do you want to have?</label>
+      <select class="form-select question-form-select" aria-label="Default select example">
+        <option selected>Indoor</option>
+        <option value="1">Outdoor</option>
+        <option value="2">Office</option>
+        <option value="3">Others</option>
+      </select>
+
+      <label for="plants_type" class="mt-4" style="color: #725B39">How often do you normally take care your plant?</label>
+      <select class="form-select question-form-select" aria-label="Default select example">
+        <option selected>Everyday</option>
+        <option value="1">1-3 times/week</option>
+        <option value="2">2-4 times/month</option>
+        <option value="3">very rare</option>
+      </select>
+
+
+      <label for="plants_type" class="mt-4" style="color: #725B39">How is the health status of your plants right now?</label>
+      <select class="form-select question-form-select" aria-label="Default select example">
+        <option selected>Healthy</option>
+        <option value="1">Fine</option>
+        <option value="2">Not good</option>
+        <option value="3">Super sick</option>
+      </select>
+
+      <label for="plants_type" class="mt-4" style="color: #725B39">Are you planning to have more plants?</label>
+      <select class="form-select question-form-select" aria-label="Default select example">
+        <option selected>Yes</option>
+        <option value="1">No</option>
+        <option value="2">I'm not sure</option>
+      </select>
+
+      <br>
+      <%= link_to 'Submit', recommendation_path, class:"btn btn-primary mt-0 " %>
+    </form>
+  </div>
+</div>
