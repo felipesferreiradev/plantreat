@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_07_215215) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_08_140825) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -31,19 +31,19 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_07_215215) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "water"
-    t.string "light"
-    t.string "humidity"
     t.string "botanical_name"
     t.string "plant_type"
     t.boolean "air_purifying"
     t.string "pet_babe_safe"
     t.string "description"
+    t.integer "water_req", default: 0, null: false
+    t.integer "light_req", default: 0, null: false
+    t.integer "humidity_req", default: 0, null: false
   end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
-    t.boolean "has_plant"
+    t.boolean "has_plant", default: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
@@ -51,7 +51,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_07_215215) do
     t.datetime "remember_created_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "score"
+    t.integer "score", default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
