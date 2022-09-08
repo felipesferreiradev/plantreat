@@ -1,1 +1,25 @@
-hello recommendation
+
+<div class="container">
+  <% @plants.each do |plant| %>
+    <h5><strong>Name:</strong></h5>
+    <p><%=plant.name%></p>
+    <h5> Botanical_name:</h5>
+    <p><%=plant.botanical_name%></p>
+    <h5> Plant_type:</h5>
+    <p><%=plant.plant_type%></p>
+    <h5> Water:</h5>
+    <p><%=plant.water%></p>
+    <h5> Light:</h5>
+    <p><%=plant.light%></p>
+    <h5> Humidity:</h5>
+    <p><%=plant.humidity%></p>
+    <h5> Air_purifying:</h5>
+    <p><%=plant.air_purifying%></p>
+    <h5> Pet_babe_safe:</h5>
+    <p><%=plant.pet_babe_safe%></p>
+    <h5> Description:</h5>
+    <p><%=plant.description%></p>
+    <hr>
+    <br>
+  <% end %>
+</div>
