@@ -1,26 +1,25 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "ciclelogo.png" %>
-    <% end %>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <% if user_signed_in? %>
+    <%= link_to dashboard_path do%>
+        <img src="https://img.icons8.com/small/344/home.png" alt="" style="width:30px; height:30px; margin-left:20px">
+    <% end %>
+    <img src="https://img.icons8.com/small/344/ranking.png" alt="" style="width:30px; height:30px; margin-left:20px">
+    <img src="https://img.icons8.com/windows/344/potted-plant.png" alt="" style="width:30px; height:30px; margin-left:20px">
+    <img src="https://img.icons8.com/small/344/user.png" alt="" style="width:30px; height:30px; margin-left:20px; margin-right:20px">
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <% if user_signed_in? %>
-          <li class="nav-item active">
+          <%# <li class="nav-item active">
             <%= link_to "Home", "#", class: "nav-link" %>
-          </li>
+          <%# </li>
           <li class="nav-item">
             <%= link_to "Messages", "#", class: "nav-link" %>
-          </li>
+          <%# </li>  %>
           <%= button_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, method: :delete, class: "nav-link" %>
-
           <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Action", "#", class: "dropdown-item" %>
               <%= link_to "Another action", "#", class: "dropdown-item" %>
