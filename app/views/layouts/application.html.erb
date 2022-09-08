@@ -6,8 +6,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
-    <%= favicon_link_tag asset_path('ciclelogo.png') %>
+
+    <%= javascript_include_tag "/assets/application.js", "data-turbo-track": "reload", defer: true %>
+    <%= favicon_link_tag asset_path('plantreat.png') %>
+
   </head>
 
   <body>
