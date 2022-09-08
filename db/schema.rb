@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_08_140825) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_08_215836) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -36,9 +36,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_08_140825) do
     t.boolean "air_purifying"
     t.string "pet_babe_safe"
     t.string "description"
-    t.integer "water_req", default: 0, null: false
-    t.integer "light_req", default: 0, null: false
-    t.integer "humidity_req", default: 0, null: false
+    t.string "water"
+    t.string "light"
+    t.string "humidity"
   end
 
   create_table "users", force: :cascade do |t|
