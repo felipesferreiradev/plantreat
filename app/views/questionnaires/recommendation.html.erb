@@ -1,3 +1,72 @@
-<% @plants.each do |plant| %>
-  <h4><%= plant.name %></h4>
-<% end %>
+
+ <div class="bg_discover text-left">
+ <%# text-left %>
+ <%= image_tag "plantreat_logo.png",:class => "img_discover"%>
+ <h1 class="title_discover">Discover your plant</h1>
+ <input type="text" class="discover_search_bar" >
+ <img src="https://img.icons8.com/pastel-glyph/344/search--v2.png" class="search" alt="">
+ <h2 class="subtitle_discover">Plant category</h2>
+ <div class="categories d-flex">
+  <%# <%= link_to new_page_path(element) do %>
+    <div class="plant_icon1">
+      <img src="https://img.icons8.com/color/344/potted-plant--v1.png" class="icons"alt="">
+     <h1 class="indoor">indoor</h1>
+    </div>
+  <%# <% end %>
+  <%# <%= link_to other_new_page(element) do %>
+    <div class="plant_icon2">
+
+      <img src="https://img.icons8.com/fluency/2x/growing-plant.png" class="icons" alt="">
+       <h1 class="outdoor">outdoor</h1>
+    </div>
+  <%# <% end %>
+  <%# <%= link_to other_new_page(element) do %>
+    <div class="plant_icon3">
+
+      <img src="https://img.icons8.com/cute-clipart/344/home-office.png" class="icons" alt="">
+       <h1 class="office">office</h1>
+    </div>
+  <%# <% end %>
+  <div class="plant_icon4">
+
+      <img src="https://img.icons8.com/parakeet/344/experimental-medium-icons-parakeet.png" class="icons" alt="">
+     <h1 class="other">other</h1>
+    </div>
+
+</div>
+    <div>
+      <h2 class="popular_plants">Popular plants</h2>
+      <div class="img_label">
+        <label class="bottom_label">Round cactus ♡</label>
+        <img src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80" class="plant_img" alt="">
+        <label class="top_label">indoor plant</label>
+      </div>
+    </div>
+     <%= render "shared/navbar"%>
+</div>
+
+<div class="container">
+  <% @plants.each do |plant| %>
+    <h5><strong>Name:</strong></h5>
+    <p><%=plant.name%></p>
+    <h5> Botanical_name:</h5>
+    <p><%=plant.botanical_name%></p>
+    <h5> Plant_type:</h5>
+    <p><%=plant.plant_type%></p>
+    <h5> Water:</h5>
+    <p><%=plant.water%></p>
+    <h5> Light:</h5>
+    <p><%=plant.light%></p>
+    <h5> Humidity:</h5>
+    <p><%=plant.humidity%></p>
+    <h5> Air_purifying:</h5>
+    <p><%=plant.air_purifying%></p>
+    <h5> Pet_babe_safe:</h5>
+    <p><%=plant.pet_babe_safe%></p>
+    <h5> Description:</h5>
+    <p><%=plant.description%></p>
+    <hr>
+    <br>
+  <% end %>
+</div>
+
