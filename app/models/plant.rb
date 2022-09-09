@@ -5,7 +5,7 @@ class Plant < ApplicationRecord
 
   include PgSearch::Model
   pg_search_scope :search_by_answers,
-    against: [ :water, :light, :humidity, :name, :plant_type ],
+    against: [ :water, :light, :humidity, :name, :plant_type, :description, :pet_babe_safe, :air_purifying, :botanical_name ],
     using: {
       tsearch: { prefix: true }
     }
