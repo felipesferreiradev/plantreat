@@ -41,6 +41,7 @@
         <label class="bottom_label"><%=plant.plant_type%></label>
         <img src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80" class="plant_img" alt="">
         <label class="top_label"><%=plant.name%></label>
+        <%= link_to "See Plant", plant_path(plant), class: "btn btn-primary" %>
       </div>
       <% end %>
     </div>
