@@ -147,3 +147,32 @@ padding-left: 22px;
   padding-left: 8px;
   color:#725B39;
 }
+
+.search_bar {
+  justify-content: space-between;
+  padding-left: 10px;
+}
+
+.search_bar form {
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.search_bar input#query {
+  padding: 20px;
+  height: 30px;
+  width: 280px;
+  background-color: #E9FFE3;
+  border: none;
+  border-radius: 20px;
+}
+
+.search_bar input .btn {
+  justify-content: center;
+  background-color: #4C6A3F;
+  color: #C8D264;
+  border: none;
+  width: 30%;
+  font-size: small;
+}

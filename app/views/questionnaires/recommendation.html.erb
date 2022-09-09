@@ -4,10 +4,12 @@
  <%= image_tag "plantreat_logo.png",:class => "img_discover"%>
  <h1 class="title_discover">Discover your plant</h1>
  <%# <input type="text" class="discover_search_bar" > %>
-  <%= form_with url: recommendation_path, method: :get do %>
-  <%= text_field_tag :query, params[:query] %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-  <% end %>
+    <div class="search_bar d-flex justify-content-between">
+        <%= form_with url: recommendation_path,method: :get do %>
+        <%= text_field_tag :query, params[:query] %>
+        <%= submit_tag "Search", class: "btn btn-primary m-0 p-0 w-50",style:"font-size:small" %>
+        <% end %>
+    </div>
  <img src="https://img.icons8.com/pastel-glyph/344/search--v2.png" class="search" alt="">
  <h2 class="subtitle_discover">Plant category</h2>
 
