@@ -6,4 +6,16 @@ class LogsController < ApplicationController
 
   def show
   end
+
+  def create
+    @log = Log.new
+    @log.user = current_user
+    @plant = Plant.find(params[:plant_id])
+    @log.plant = @plant
+    @log.save!
+    redirect_to logs_path
+  end
+  def index
+    @logs = Log.all
+  end
 end

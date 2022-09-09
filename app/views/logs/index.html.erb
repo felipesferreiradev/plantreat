@@ -5,6 +5,9 @@
   <%= image_tag "plantreat_logo.png", class:"garden_logo", style: "height:60px; width:60px"%>
   <h2>My garden</h2>
 
+  <% @logs.each do |log|%>
+    <%= log.plant_id %>
+  <% end %>
   <%# cards %>
 
   <div class="garden_card">

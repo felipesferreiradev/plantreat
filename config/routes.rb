@@ -11,5 +11,8 @@ Rails.application.routes.draw do
   get "garden", to: "plants#garden"
   get "plants/detail", to: "plants#detail"
 
-  resources :plants, :logs
+  resources :logs, only: :index
+  resources :plants do
+    resources :logs, only: :create
+  end
 end
