@@ -19,7 +19,12 @@
 .btn-primary{
       --bs-btn-border-color: #4C6A3F;
 }
+
 a {
+  text-decoration: none;
+  color: #C8D264;
+}
+a:hover {
   color: white;
   text-decoration: none;
 }
