@@ -1,0 +1,23 @@
+.garden_container {
+  background: white;
+  height: 100vh;
+  padding: 15px;
+}
+
+
+.garden_card {
+  border: solid 0.5px lightgray;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px  lightgray;
+  display: flex;
+  margin-top: 14px;
+}
+
+.garden_logo {
+  margin: 5px;
+  padding: 5px;
+}
+
+.garden_container h2 {
+  padding: 10px;
+}
