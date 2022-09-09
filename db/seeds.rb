@@ -40,7 +40,7 @@ variegated_monstera.save!
 parlour_palm = Plant.new(
   name: "Parlour Palm",
   water: "Frequent Watering",
-  light: "Medium _ight",
+  light: "Medium Hight",
   humidity: "High Humidity",
   botanical_name: "Chamaedorea elegans",
   plant_type: "Herbaceous perennial; indoor",
@@ -57,7 +57,7 @@ parlour_palm.save!
 corn_plant = Plant.new(
   name: "Corn plant",
   water: "Light Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Dracaena fragrans",
   plant_type: "Indoor; evergreen shrub",
@@ -74,8 +74,8 @@ corn_plant.save!
 succulent_plant = Plant.new(
   name: "Succulent plant",
   water: "Light Watering",
-  light: "Bright light",
-  humidity: "Low humidity",
+  light: "Bright Light",
+  humidity: "Low Humidity",
   botanical_name: "Succulent",
   plant_type: "Succulent, indoor",
   air_purifying: true,
@@ -89,7 +89,7 @@ succulent_plant.save!
 string_of_nickles = Plant.new(
   name: "String of nickels",
   water: "Light Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Dischidia imbricata",
   plant_type: "Indoor",
@@ -104,7 +104,7 @@ string_of_nickles.save!
 aspidistra = Plant.new(
   name: "Aspidistra",
   water: "Light Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Aspidistra Elatior",
   plant_type: "Indoor",
@@ -123,7 +123,7 @@ aspidistra.save!
 pachira_aquatica = Plant.new(
   name: "Pachira aquatica",
   water: "Light Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Pachira aquatica",
   plant_type: "Evergreen, indoor",
@@ -141,7 +141,7 @@ pachira_aquatica.save!
 fiddle_leaf_fig = Plant.new(
   name: "Fiddle-leaf fig",
   water: "Light Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Ficus lyrata",
   plant_type: "Evergreen tree, indoor",
@@ -158,7 +158,7 @@ fiddle_leaf_fig.save!
 aglaonema_red_star = Plant.new(
   name: "Aglaonema Red Star",
   water: "Light Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Aglaonema ‘Red Star’",
   plant_type: "Evergreen, indoor",
@@ -175,7 +175,7 @@ aglaonema_red_star.save!
 honeysuckle = Plant.new(
   name: "Honeysuckle lonicera",
   water: "Regular Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Lonicera henryi ‘Copper Beauty’",
   plant_type: "Flowering climber, outdoor",
@@ -191,7 +191,7 @@ honeysuckle.save!
 fatsia_japonica = Plant.new(
   name: "Fatsia Japonica",
   water: "Regular Watering",
-  light: "Medium light",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Fatsia japonica",
   plant_type: "Outdoor evergreen",
@@ -205,8 +205,8 @@ fatsia_japonica.save!
 
 acer_palmatum = Plant.new(
   name: "Acer Palmatum",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Acer palmatum",
   plant_type: "Outdoor tree",
@@ -220,7 +220,7 @@ acer_palmatum.save!
 
 tree_fern = Plant.new(
   name: "Tree Fern",
-  water: "Regular watering",
+  water: "Regular Watering",
   light: "Low light",
   humidity: "Medium Humidity",
   botanical_name: "Dicksonia antarctica",
@@ -236,7 +236,7 @@ tree_fern.save!
 cordyline_green = Plant.new(
   name: "Cordyline green",
   water: "Light Watering",
-  light: "Bright light",
+  light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Cordyline australis",
   plant_type: "Outdoor evergreen",
@@ -251,8 +251,8 @@ cordyline_green.save!
 
 snake_plant = Plant.new(
   name: "Snake Plant",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Low Humidity",
   botanical_name: "Sansevieria trifasciata",
   plant_type: "Indoor; evergreen perennial",
@@ -267,8 +267,8 @@ snake_plant.save!
 
 boston_fern = Plant.new(
   name: "Boston Fern",
-  water: "Frequent watering",
-  light: "Medium light",
+  water: "Frequent Watering",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Nephrolepis Exaltata",
   plant_type: "Fern; indoor",
@@ -283,8 +283,8 @@ boston_fern.save!
 
 zamioculcas_zamiifolia = Plant.new(
   name: "Zamioculcas zamiifolia",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Low Humidity",
   botanical_name: "Zamioculcas zamiifolia",
   plant_type: "Evergreen perennial; indoor",
@@ -298,8 +298,8 @@ zamioculcas_zamiifolia.save!
 
 kentia_palm = Plant.new(
   name: "Kentia Palm",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Howea forsteriana",
   plant_type: "Palm, indoor",
@@ -314,8 +314,8 @@ kentia_palm.save!
 
 devils_ivy = Plant.new(
   name: "Devil's ivy",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Epipremnum aureum",
   plant_type: "Evergreen vine; indoor",
@@ -329,8 +329,8 @@ devils_ivy.save!
 
 marble_queen = Plant.new(
   name: "Marble Queen pothos",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Epipremnum pinnatum ‘Marble Queen’",
   plant_type: "Evergreen, indoor",
@@ -344,8 +344,8 @@ marble_queen.save!
 
 swiss_cheese_plant = Plant.new(
   name: "Swiss cheese plant",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Monstera deliciosa",
   plant_type: "Evergreen shrub, indoor",
@@ -360,8 +360,8 @@ swiss_cheese_plant.save!
 
 tradescantia_nanouk = Plant.new(
   name: "Tradescantia Nanouk",
-  water: "Light watering",
-  light: "Bright light",
+  water: "Light Watering",
+  light: "Bright Light",
   humidity: "Medium Humidity",
   botanical_name: "Tradescantia Nanouk",
   plant_type: "Indoor hanging plant",
@@ -375,8 +375,8 @@ tradescantia_nanouk.save!
 
 scheffera_on_lava = Plant.new(
   name: "Schefflera on Lava",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Schefflera actinophylla ",
   plant_type: "Evergreen perennial, indoor",
@@ -390,8 +390,8 @@ scheffera_on_lava.save!
 
 curly_spider_plant = Plant.new(
   name: "Curly Spider Plant",
-  water: "Light watering",
-  light: "Medium light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Low Humidity",
   botanical_name: "Chlorophytum comosum",
   plant_type: "Evergreen perennial, indoor",
@@ -405,8 +405,8 @@ curly_spider_plant.save!
 
 aloe_vera = Plant.new(
   name: "Aloe Vera",
-  water: "Light watering",
-  light: "Bright light",
+  water: "Light Watering",
+  light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Aloe barbadensis",
   plant_type: "Succulent, indoor",
@@ -422,8 +422,8 @@ aloe_vera.save!
 
 yucca_elephantipes = Plant.new(
   name: "Yucca Elephantipes",
-  water: "Light watering",
-  light: "Bright light",
+  water: "Light Watering",
+  light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Yucca elephantipes",
   plant_type: "Evergreen shrub, indoor",
@@ -440,7 +440,7 @@ yucca_elephantipes.save!
 fargesia_bamboo = Plant.new(
   name: "Fargesia Bamboo",
   water: "Light Watering",
-  light: "Bright_Light",
+  light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Umbrella bamboo",
   plant_type: "Outdoor evergreen",
@@ -456,8 +456,8 @@ fargesia_bamboo.save!
 
 cycad = Plant.new(
   name: "Cycad",
-  water: "Light watering",
-  light: "Medium_light",
+  water: "Light Watering",
+  light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Cycas revoluta",
   plant_type: "Outdoor evergreen",
@@ -473,7 +473,7 @@ cycad.save!
 kumquat_tree = Plant.new(
   name: "Kumquat tree",
   water: " Frequent Watering",
-  light: "Bright_Light",
+  light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Citrus japonica",
   plant_type: "Outdoor citrus tree",
@@ -490,7 +490,7 @@ kumquat_tree.save!
 climbing_rose_white = Plant.new(
   name: "Climbing rose - white",
   water: "Light Watering",
-  light: "Bright_Light",
+  light: "Bright Light",
   humidity: "Medium Humidity",
   botanical_name: "Rosa",
   plant_type: "Woody perennial flowering plant / Outdoor",
