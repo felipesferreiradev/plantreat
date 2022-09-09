@@ -4,6 +4,13 @@ class QuestionnairesController < ApplicationController
   def recommendation
     @plants = Plant.all
     @plants = Plant.where(water: params[:water]).or(Plant.where(light: params[:light])).or(Plant.where(humidity: params[:humidity]))
+
+    if params[:query].present?
+      @plants = Plant.where("name ILIKE ?", "%#{params[:query]}%")
+    else
+      @plants = Plant.all
+    end
+
   end
 
   def questionnaire_own_a_plant
