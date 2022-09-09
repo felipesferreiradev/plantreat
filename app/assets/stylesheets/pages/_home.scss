@@ -14,18 +14,22 @@
   background-color: #4C6A3F;
   color: #C8D264;
   margin-top: 125px;
+  border: none;
+}
 
-}
-.btn-primary{
-      --bs-btn-border-color: #4C6A3F;
-}
 
 a {
   text-decoration: none;
   color: #C8D264;
 }
+
 a:hover {
   color: white;
+}
+
+
+.btn:hover {
+  background-color: #4C6A3F;
   text-decoration: none;
 }
 
@@ -34,8 +38,6 @@ a:hover {
   justify-content: center;
   font-size: large;
   margin-top: 42px;
-
-
 }
 .picture {
 height: 165px;
