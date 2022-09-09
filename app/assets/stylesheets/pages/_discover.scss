@@ -1,0 +1,146 @@
+.bg_discover{
+  height: 100vh;
+  background: white;
+}
+.img_discover{
+  height: 100px;
+  padding: 15px;
+}
+
+.discover_search_bar{
+  height: 49px;
+  width: 339px;
+  margin: 15px;
+  margin-top: -10px;
+  border-radius: 50px;
+  background-color: #E9FFE3;
+  border: none;
+  opacity: 0.5;
+}
+
+.title_discover {
+  font-size: smaller;
+  padding: 15px;
+  color:#725B39;
+}
+
+.subtitle_discover{
+  font-size: smaller;
+  padding: 15px;
+  align-items: flex-start;
+  color:#725B39;
+}
+
+.icons{
+  height: 50px;
+  width: 50px;
+  color:#725B39;
+  padding: 7px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.categories{
+  color:#725B39;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 37px;
+    margin: -19px;
+    padding-left: 43px;
+
+}
+.popular_plants{
+  color:#725B39;
+  font-size: smaller;
+  padding: 15px;
+  align-items: flex-start;
+  margin-top: 17px;
+
+
+}
+.plant_img{
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+}
+
+.img_label {
+  position: relative;
+  margin: 0 10px;
+  display: flex;
+    justify-content: center;
+}
+
+.bottom_label{
+position: absolute;
+bottom: 7px;
+left: 56px;
+background-color: #E9FFE3;
+// padding-left: 35px;
+border-radius: 50px;
+color:#725B39;
+padding: 10px;
+opacity: 0.8;
+padding-left: 42px;
+padding-right: 42px;
+}
+
+.top_label{
+position: absolute;
+background-color: #E9FFE3;
+top: 19px;
+left: 34px;
+border-radius: 50px;
+color:#725B39;
+opacity: 0.8;
+padding-left: 22px;
+    padding-right: 22px;
+}
+
+.plant_icon1{
+  background:#E9FFE3 ;
+  border-radius: 5px;
+    opacity: 0.8;
+
+}
+
+.plant_icon2{
+  background:#E9FFE3 ;
+  border-radius: 5px;
+    opacity: 0.8;
+}
+
+.plant_icon3{
+  background:#E9FFE3 ;
+  border-radius: 5px;
+    opacity: 0.8;
+}
+.plant_icon4{
+  background:#E9FFE3 ;
+  border-radius: 5px;
+    opacity: 0.8;
+}
+.search{
+  height: 25px;
+  width: 25px;
+  margin: -57px;
+  color:#725B39;
+}
+.indoor{
+  font-size: smaller;
+  color:#725B39;
+}
+.outdoor{
+  font-size: smaller;
+  color:#725B39;
+}
+.office{
+  font-size: smaller;
+  padding-left: 5px;
+  color:#725B39;
+}
+.other{
+  font-size: smaller;
+  padding-left: 8px;
+  color:#725B39;
+}

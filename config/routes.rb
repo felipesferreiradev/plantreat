@@ -8,6 +8,5 @@ Rails.application.routes.draw do
   get "questionnaire_looking_for_a_plant", to: "questionnaires#questionnaire_looking_for_a_plant"
   get "recommendation", to: "questionnaires#recommendation"
   get "leaderboard", to: "leaderboards#leaderboard"
-
   resources :plants, :logs
 end
