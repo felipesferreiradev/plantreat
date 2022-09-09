@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   get "leaderboard", to: "leaderboards#leaderboard"
   get "garden", to: "plants#garden"
 
-  resources :plants, :logs
+  resources :plants do
+    resources :logs
+  end
 end
