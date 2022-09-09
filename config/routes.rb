@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "recommendation", to: "questionnaires#recommendation"
   get "leaderboard", to: "leaderboards#leaderboard"
   get "garden", to: "plants#garden"
+  get "plants/detail", to: "plants#detail"
 
   resources :plants, :logs
 end
