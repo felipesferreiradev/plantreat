@@ -1,0 +1,27 @@
+.plant_detail_container {
+  background-color: white;
+  position: absolute;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.plant_detail_label_content {
+  color: #725B39;
+  font-weight: lighter;
+  font-size: small;
+}
+
+#btn-plant-sick {
+  font-size: small;
+  width: 70%;
+  background-color: #E9FFE3;
+  color: #725B39;;
+}
+
+.history_card {
+    border: solid 0.5px lightgray;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px  lightgray;
+    display: flex;
+    margin-top: 14px;
+}

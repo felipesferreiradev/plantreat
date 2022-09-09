@@ -18,10 +18,11 @@
 
 .navbar {
   height: 8%;
-  position:absolute;
+  position:fixed;
   bottom:0;
   width:100%;
   border: lightgrey solid 1px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  z-index: 1000;
 }

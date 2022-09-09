@@ -1,41 +1,95 @@
 <%= render "shared/navbar" %>
 
-<div class="container plant_show_container">
+<div class="container plant_detail_container">
 
-  <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
-  <h2>Round Cactus</h2>
-
-  <img class="w-100" src="https://images.unsplash.com/photo-1509645470620-c9c349934693?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm91bmQlMjBjYWN0dXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="First slide" style="height:200px; object-fit: cover">
+    <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
+    <h2 class="m-0 p-2">Round Cactus</h2>
     <%# show points %>
     <div>
-        <h3 class="mt-3" style="color: #725B39;">150 points</h3>
+        <h5 class="mt-0 p-0 text-center" style="color: #725B39;">150 points</h5>
+    </div>
+
+    <%# add new picture button %>
+
+    <img class="w-100" src="https://images.unsplash.com/photo-1509645470620-c9c349934693?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm91bmQlMjBjYWN0dXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"  style="height:200px; object-fit: cover">
+        <div class = "d-flex justify-content-center">
+      <%= link_to 'Add new pictures', root_path, class:"btn mt-3", id:"btn-plant-sick"%>
     </div>
 
     <%#show treatment options  %>
-    <div class="d-flex">
-      <div class="row">
-          <div class="col show_type">
-            
-            <label style="font-size:small; color: #9F927F">Type</label>
-            <p class="plant_show_label_content">Outdoor</p>
+    <div class="d-flex justify-content-center mt-3">
+      <div class="row d-flex gap-3">
+        <div class="col d-flex flex-column align-items-center">
+            <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Water</p>
         </div>
 
-        <div class="col show_size">
-            <label style="font-size:small; color: #9F927F">Size</label>
-            <p class="plant_show_label_content">Medium</p>
+        <div class="col d-flex flex-column align-items-center">
+            <img class="p-2" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Sun</p>
         </div>
 
-        <div class="col show_level">
-            <label style="font-size:small; color: #9F927F">Level</label>
-            <p class="plant_show_label_content">Easy</p>
+        <div class="col d-flex flex-column align-items-center">
+            <img class="p-2" src="https://img.icons8.com/external-icongeek26-flat-icongeek26/344/external-Fertile-Soil-gardening-icongeek26-flat-icongeek26.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Soil</p>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center">
+          <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+          <p class="plant_detail_label_content mt-1">Food</p>
         </div>
 
       </div>
-
     </div>
 
+    <%#sick button  %>
+
     <div class = "d-flex justify-content-center">
-      <%= link_to 'Add to my garden', root_path, class:"btn btn-primary mt-3 w-50" %>
+      <%= link_to 'My plant looks sick', root_path, class:"btn mt-1", id:"btn-plant-sick"%>
+    </div>
+
+    <%#history %>
+    <div>
+        <h3 class="mt-3" style="color: #725B39;">History</h3>
+    </div>
+
+    <%#all history cards%>
+
+   <div class="all_history_cards" >
+
+      <div class="card history_card">
+        <div class="card-body pb-1">
+          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
+          <div class="d-flex justify-content-between mt-2">
+            <h6>Water</h6>
+            <p class="plant_detail_score"> +10 points</p>
+          </div>
+        </div>
+      </div>
+
+            <div class="card history_card">
+        <div class="card-body pb-1">
+          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
+          <div class="d-flex justify-content-between mt-2">
+            <h6>Sun</h6>
+            <p class="plant_detail_score"> +10 points</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card history_card">
+        <div class="card-body pb-1">
+          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
+          <div class="d-flex justify-content-between mt-2">
+            <h6>Soil</h6>
+            <p class="plant_detail_score"> +10 points</p>
+          </div>
+        </div>
+      </div>
+
+      <%#please don't remove this br br%>
+      <br><br>
+
     </div>
 
 </div>
