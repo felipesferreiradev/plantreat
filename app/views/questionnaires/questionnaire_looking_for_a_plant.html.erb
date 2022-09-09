@@ -3,30 +3,30 @@
   <%= image_tag "plantreat_logo.png", :class => "signup_logo"%>
   <div class="question1-bg d-flex flex-column align-items-center p-5">
     <h3 class="q-title mt-0">We have some questions for you</h3>
-    <form action="submit" class="d-flex flex-column align-items-center">
+    <form action="<%= recommendation_path %>"  method="GET" class="d-flex flex-column align-items-center">
 
-      <label for="plants_type" class="mt-4" style="color: #725B39">How many times would like to water your plant</label>
-      <select class="form-select question-form-select" aria-label="Default select example">
-        <option selected>Light watering</option>
-        <option value="1">Regular watering</option>
-        <option value="2">Frequent watering</option>
+      <label for="water" class="mt-4" style="color: #725B39">How many times would like to water your plant</label>
+      <select name="water" class="form-select question-form-select" aria-label="Default select example">
+        <option selected value="Light Watering">Light Watering</option>
+        <option value="Regular Watering">Regular Watering</option>
+        <option value="Frequent Watering">Frequent Watering</option>
       </select>
 
-      <label for="plants_type" class="mt-4" style="color: #725B39">Where will you keep your plant?</label>
-      <select class="form-select question-form-select" aria-label="Default select example">
-        <option selected>Low light</option>
-        <option value="1">Medium light</option>
-        <option value="2">Bright light</option>
+      <label for="light" class="mt-4" style="color: #725B39">Where will you keep your plant?</label>
+      <select name="light" class="form-select question-form-select" aria-label="Default select example">
+        <option selected value="Low Light">Low Light</option>
+        <option value="Medium Light">Medium Light</option>
+        <option value="Bright Light">Bright Light</option>
       </select>
 
-      <label for="plants_type" class="mt-4" style="color: #725B39">How humid is your plant living space?</label>
-      <select class="form-select question-form-select" aria-label="Default select example">
-        <option selected>Low humidity</option>
-        <option value="1">Medium humidity</option>
-        <option value="2">High humidity</option>
+      <label for="humidity" class="mt-4" style="color: #725B39">How humid is your plant living space?</label>
+      <select name="humidity" class="form-select question-form-select" aria-label="Default select example">
+        <option selected value="Low Humidity">Low Humidity</option>
+        <option value="Medium Humidity">Medium Humidity</option>
+        <option value="High Humidity">High Humidity</option>
       </select>
       <br>
-      <%= link_to 'Submit', recommendation_path, class:"btn btn-primary mt-0 " %>
+      <input type="submit", value="Submit">
     </form>
   </div>
 </div>
