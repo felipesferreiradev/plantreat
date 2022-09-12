@@ -7,12 +7,13 @@
 .plant_show_label_content {
   color: #725B39;
   font-weight: lighter;
-  font-size: medium;
+  font-size: small;
 }
 
 .plant_show_p {
   font-weight: lighter;
   font-size: small;
+  margin-top: 20px;
 }
 
 .plant_show_logo {
@@ -22,4 +23,13 @@
 
 .plant_show_container h2 {
   padding: 10px;
+}
+
+.plant_show_container label {
+  color: #725B39;
+  font-weight: bold;
+}
+
+.show_details_col {
+  margin-top: 25px;
 }
