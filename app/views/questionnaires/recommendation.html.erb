@@ -39,12 +39,13 @@
     </div>
       <h2 class="popular_plants">Popular plants</h2>
        <% @plants.each do |plant| %>
-      <div class="img_label">
-        <label class="bottom_label"><%=plant.plant_type%></label>
-        <img src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=724&q=80" class="plant_img" alt="">
-        <label class="top_label"><%=plant.name%></label>
-        <%= link_to "See Plant", plant_path(plant) %>
-      </div>
+       <%= link_to plant_path(plant) do %>
+          <div class="img_label">
+          <label class="bottom_label"><%=plant.botanical_name%></label>
+          <img src="<%= plant.plants_images %>"  class="plant_img" alt="">
+          <label class="top_label"><%=plant.name%></label>
+         <%= link_to "See Plant", plant_path(plant) %>
+        </div>
       <% end %>
     </div>
 
