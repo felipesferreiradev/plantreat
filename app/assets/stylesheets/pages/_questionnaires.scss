@@ -2,6 +2,7 @@
   border-radius: 20px;
   background-color: #E9FFE3;
   border: none;
+  color: #725B39;
 }
 .question-bg {
   background-color: white;
@@ -9,13 +10,21 @@
 }
 
 input[type=submit] {
-  justify-content: center;
-  border-radius: 50px;
-  background-color: #4C6A3F;
+  // justify-content: center;
+  // border-radius: 50px;
+  // background-color: #4C6A3F;
+  // color: #C8D264;
+  // border: none;
+  // font-size: medium;
+  // padding: 6px 12px;
+  margin: 0;
   color: #C8D264;
+  background-color: #4C6A3F;
+  border-radius: 5px;
   border: none;
-  font-size: medium;
-  padding: 6px 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
 }
 
 input[type=submit]:hover {
