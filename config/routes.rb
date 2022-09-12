@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get "questionnaire_own_a_plant", to: "questionnaires#questionnaire_own_a_plant"
   get "questionnaire_looking_for_a_plant", to: "questionnaires#questionnaire_looking_for_a_plant"
   get "recommendation", to: "questionnaires#recommendation"
+  get "recommendation", to: "questionnaires#indoor"
   get "leaderboard", to: "leaderboards#leaderboard"
   get "garden", to: "plants#garden"
   get "plants/detail_game", to: "plants#detail_game"
