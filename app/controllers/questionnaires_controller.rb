@@ -21,6 +21,7 @@ class QuestionnairesController < ApplicationController
   # end
 
   def questionnaire_own_a_plant
+
   end
 
   def questionnaire_looking_for_a_plant
