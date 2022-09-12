@@ -6,12 +6,20 @@ class QuestionnairesController < ApplicationController
     @plants = Plant.where(water: params[:water]).or(Plant.where(light: params[:light])).or(Plant.where(humidity: params[:humidity]))
 
     if params[:query].present?
-      @plants = Plant.where("name ILIKE ?", "%#{params[:query]}%")
+      sql_query = "name ILIKE :query OR plant_type ILIKE :query OR plant_type ILIKE :query"
+      @plants = Plant.where(sql_query, query: "%#{params[:query]}%")
     else
       @plants = Plant.all
     end
-
   end
+
+  # def indoor
+  #   @indoor = Plant.where(plant_type: "Indoor")
+  # end
+
+  # def outdoor
+  #   @outdoor = Plant.where(plant_type: "Outdoor")
+  # end
 
   def questionnaire_own_a_plant
   end
