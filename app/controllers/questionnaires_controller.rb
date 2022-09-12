@@ -12,14 +12,6 @@ class QuestionnairesController < ApplicationController
     end
   end
 
-  # def indoor
-  #   @indoor = Plant.where(plant_type: "Indoor")
-  # end
-
-  # def outdoor
-  #   @outdoor = Plant.where(plant_type: "Outdoor")
-  # end
-
   def questionnaire_own_a_plant
 
   end
