@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   def home
   end
 
-  def dashboard
+  def profile
   end
 
   def options
