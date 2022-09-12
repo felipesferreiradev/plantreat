@@ -1,6 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-
         <% if user_signed_in? %>
     <%= link_to dashboard_path do%>
         <img src="https://img.icons8.com/small/344/home.png" alt="" style="width:30px; height:30px; margin-left:20px">
@@ -21,6 +20,7 @@
             <%= link_to "Messages", "#", class: "nav-link" %>
           <%# </li>  %>
           <%= button_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, method: :delete, class: "nav-link" %>
+
           <li class="nav-item dropdown">
             <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
