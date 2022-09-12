@@ -1,17 +1,18 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-
         <% if user_signed_in? %>
-    <%= link_to dashboard_path do%>
+    <%= link_to recommendation_path do%>
         <img src="https://img.icons8.com/small/344/home.png" alt="" style="width:30px; height:30px; margin-left:20px">
     <% end %>
+    <%= link_to leaderboard_path do%>
     <img src="https://img.icons8.com/small/344/ranking.png" alt="" style="width:30px; height:30px; margin-left:20px">
-
+    <% end %>
     <%= link_to garden_path do%>
         <img src="https://img.icons8.com/windows/344/potted-plant.png" alt="" style="width:30px; height:30px; margin-left:20px">
     <% end %>
+    <%= link_to plants_detail_path do%>
     <img src="https://img.icons8.com/small/344/user.png" alt="" style="width:30px; height:30px; margin-left:20px; margin-right:20px">
-
+    <% end %>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
           <%# <li class="nav-item active">
