@@ -16,11 +16,12 @@
     <div class="cd-flex justify-content-center mt-3">
       <div class="row d-flex gap-3">
         <div class="col d-flex flex-column align-items-center">
+        <form action="<%= recommendation_path %>"  method="GET">
             <img class="p-2" src="https://img.icons8.com/external-flaticons-flat-flat-icons/452/external-plant-plants-flaticons-flat-flat-icons-7.png"
               style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
-              action="<%= recommendation_path %>" method="GET"
               type="submit">
             <p class="plant_detail_label_content mt-1">indoor</p>
+        </form>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
@@ -55,6 +56,7 @@
             <label class="top_label"><%=plant.name%></label>
           </div>
         <% end %>
+      <% end %>
       <% end %>
     </div>
 </div>
