@@ -50,13 +50,12 @@
        <% @plants.each do |plant| %>
        <%= link_to plant_path(plant) do %>
           <div class="img_label">
-          <label class="bottom_label"><%=plant.botanical_name%></label>
-          <img src="<%= plant.plants_images %>"  class="plant_img" alt="">
-          <label class="top_label"><%=plant.name%></label>
-         <%= link_to "See Plant", plant_path(plant) %>
-        </div>
+            <label class="bottom_label"><%=plant.botanical_name%></label>
+            <img src="<%= plant.plants_images %>"  class="plant_img" alt="">
+            <label class="top_label"><%=plant.name%></label>
+          </div>
+        <% end %>
       <% end %>
     </div>
-
 </div>
   <%= render "shared/navbar"%>
