@@ -11,21 +11,22 @@ peace_lily = Plant.new(
   light: "Bright Light",
   humidity: "High Humidity",
   botanical_name: "Spathiphyllum wallisii",
-  plant_type: "Indoor; tender perennial",
+  plant_type: "Indoor",
   air_purifying: true,
   pet_babe_safe: "Toxic to dogs and cats",
   description: "The peace lily is native to tropical rainforests, specifically those of South and Central America.
   As exotic as it looks, its light and water needs are modest.
-  As well as being an elegant beauty, this plant is a hardworking air-purifyer."
+  As well as being an elegant beauty, this plant is a hardworking air-purifyer.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1564153137/products/peace-lily-1530c2.jpg"
 )
 peace_lily.save!
 
 variegated_monstera = Plant.new(
-  name: "Variegated Monstera",
+  name: "Monstera",
   water: "Light Watering",
   light: "Bright light",
   humidity: "High Humidity",
-  botanical_name: "Monstera borsigiana variegata, Albo variegata",
+  botanical_name: "Monstera borsigiana variegata",
   plant_type: "Indoor",
   air_purifying: true,
   pet_babe_safe: "Toxic if ingested",
@@ -33,7 +34,8 @@ variegated_monstera = Plant.new(
   This extraordinary plant is the result of some very careful cultivation.
   It’s so rare and so prized that plants have been known to exchange hands for thousands of pounds.
   The green parts of the leaf contain chlorophyll, which allows plants to absorb light, which they turn into energy.
-  The white parts contain no chlorophyll. So variegated plants have to work harder to live."
+  The white parts contain no chlorophyll. So variegated plants have to work harder to live.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1630669684/lsauudcrlpdqgpcrdfbp.jpg"
 )
 variegated_monstera.save!
 
@@ -43,14 +45,15 @@ parlour_palm = Plant.new(
   light: "Medium Hight",
   humidity: "High Humidity",
   botanical_name: "Chamaedorea elegans",
-  plant_type: "Herbaceous perennial; indoor",
+  plant_type: "Indoor",
   air_purifying: true,
   pet_babe_safe: "Yes",
   description: "In the wild, you’ll find this plant growing primarily in Mexico and Guatemala,
   but it’s been beloved as an indoor plant around the world since Victorian times.
   For Victorians, the parlour was the best room in the house,
   where you would receive your fanciest visitors and display your fanciest possessions.
-  This exotic palm in your parlour would suggest you were worldly and sophisticated, hence the name Parlour palm."
+  This exotic palm in your parlour would suggest you were worldly and sophisticated, hence the name Parlour palm.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1647598440/yk2c4u2ftss4rfvsmnkv.jpg"
 )
 parlour_palm.save!
 
@@ -60,14 +63,15 @@ corn_plant = Plant.new(
   light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Dracaena fragrans",
-  plant_type: "Indoor; evergreen shrub",
+  plant_type: "Indoor",
   air_purifying: true,
   pet_babe_safe: "Mildly toxic to pets and people if ingested",
   description: "Native tribes of northern Tanzania and Mt. Kilimanjaro used corn plants to mark sacred sites as far back
   as 1000 BC. This is a plant deserving of some respect.
   While they might grow as high as six metres in the wild, indoors corn plants are more about character than size,
   providing a bit of tropical flavour even on grey days. If they’re really happy, they might reward you by growing small
-  white flowers."
+  white flowers.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1539776737/products/corn-plant-214138.jpg"
 )
 corn_plant.save!
 
@@ -77,12 +81,13 @@ succulent_plant = Plant.new(
   light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Succulent",
-  plant_type: "Succulent, indoor",
+  plant_type: "Indoor",
   air_purifying: true,
   pet_babe_safe: "Toxic if ingested",
   description: "Succulent is an umbrella term for a large group of plants that generally have thick,
   fleshy leaves that hold a lot of water (the name comes from the latin for juice).
-  They're found all over the world, almost exclusively in very warm places that have periods of drought."
+  They're found all over the world, almost exclusively in very warm places that have periods of drought.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1618419409/vrt2ncnpg7mfjidbkqtw.jpg"
 )
 succulent_plant.save!
 
@@ -97,7 +102,8 @@ string_of_nickles = Plant.new(
   pet_babe_safe: "Mildly toxic if ingested",
   description: "If you happen to find yourself in a forest in the tropics of Asia,
   look up and you might see string of nickels, or dischidia imbricata. It makes its home in the crevices of tall trees
-  (scientifically, it’s known as an epiphyte). It dangles handsomely soaking up moisture from the atmosphere."
+  (scientifically, it’s known as an epiphyte). It dangles handsomely soaking up moisture from the atmosphere.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1581005288/yhzhc4t61xhqt501t2wl.jpg"
 )
 string_of_nickles.save!
 
@@ -116,17 +122,18 @@ aspidistra = Plant.new(
   They’ve built up that tolerance for poor conditions by growing in the shade under larger trees in China and Vietnam.
   Their resilience has made them an extremely popular houseplant, because anybody can care for one.
   If you’re just beginning your plant parenting journey, there’s no better starting point.
-  You’d have to try weirdly hard to kill him (don’t try)."
+  You’d have to try weirdly hard to kill him (don’t try).",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1595345834/n28u2h5nxzevh8vvcc4k.jpg"
 )
 aspidistra.save!
 
 pachira_aquatica = Plant.new(
-  name: "Pachira aquatica",
+  name: "Pachira",
   water: "Light Watering",
   light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Pachira aquatica",
-  plant_type: "Evergreen, indoor",
+  plant_type: "Office",
   air_purifying: true,
   pet_babe_safe: "Yes",
   description: "The money tree is known by many lovely names: French peanut, Guiana nut, Malabar chestnut,
@@ -134,41 +141,44 @@ pachira_aquatica = Plant.new(
   and South America. It’s plaited trunk doesn’t occur naturally, but it’s become traditional to plait it when grown as
   a houseplant. For reasons that aren’t entirely clear, this plant is believed to bring good fortune and prosperity.
   In Asia, it’s become very popular as an office plant, as it’s thought it will help a business thrive. Got to be worth
-  a try, right?"
+  a try, right?",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1644934421/lycx3gn8vqgc8qb4b5cw.jpg",
 )
 pachira_aquatica.save!
 
 fiddle_leaf_fig = Plant.new(
-  name: "Fiddle-leaf fig",
+  name: "Fiddle-leaf Fig",
   water: "Light Watering",
   light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Ficus lyrata",
-  plant_type: "Evergreen tree, indoor",
+  plant_type: "Indoor",
   air_purifying: true,
   pet_babe_safe: "Toxic if ingested",
   description: "You may not be surprised to hear this plant is from the rainforests of West Africa.
   You might be surprised to know that it frequently grows as an epiphyte.
   That means it starts its life not on the ground, but high up in the crevices of larger trees. As it grows, it sends
   roots down to the ground, which wrap around its host and eventually strangle it.
-  Quite fittingly dramatic for such a star plant."
+  Quite fittingly dramatic for such a star plant.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1618414356/mywaksozukbbziwoknau.jpg"
 )
 fiddle_leaf_fig.save!
 
 aglaonema_red_star = Plant.new(
-  name: "Aglaonema Red Star",
+  name: "Red Star",
   water: "Light Watering",
   light: "Medium Light",
   humidity: "Medium Humidity",
-  botanical_name: "Aglaonema ‘Red Star’",
-  plant_type: "Evergreen, indoor",
+  botanical_name: "Aglaonema",
+  plant_type: "Office",
   air_purifying: true,
   pet_babe_safe: "Mildly toxic if ingested",
   description: "This plant is a specially bred version of the Chinese evergreen, a family of plants most commonly found
   in tropical regions of SouthEast Asia. Introduced to the UK in the late 1800s,
   it’s become a very popular small indoor plant because it’s so low-maintenance,
   suitable for homes or offices. The name aglaonema is derived from the Greek ‘aglos’, meaning bright, and ‘nema’,
-  meaning thread, because many varieties have colourful, thread-like veins."
+  meaning thread, because many varieties have colourful, thread-like veins.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1634661150/fzjlboxncitbaisepuo5.jpg",
 )
 aglaonema_red_star.save!
 
@@ -177,14 +187,15 @@ honeysuckle = Plant.new(
   water: "Regular Watering",
   light: "Medium Light",
   humidity: "Medium Humidity",
-  botanical_name: "Lonicera henryi ‘Copper Beauty’",
-  plant_type: "Flowering climber, outdoor",
-  air_purifying: true,
+  botanical_name: "Lonicera henryi",
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Yes",
   description: "Honeysuckle ‘Copper Beauty’ is a pretty climbing plant that will be covered in little yellow flowers
   in June and July, but the flowers are only half the story.
   Honeysuckle is well known for its incredible fragrance, which will perfume your outdoor space through summer.
-  Bronze and green foliage provides interest even when it’s not in flower."
+  Bronze and green foliage provides interest even when it’s not in flower.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1643989415/jdwe7t3p8q6n0z1xq5jy.jpg"
 )
 honeysuckle.save!
 
@@ -194,12 +205,13 @@ fatsia_japonica = Plant.new(
   light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Fatsia japonica",
-  plant_type: "Outdoor evergreen",
-  air_purifying: true,
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Yes",
   description: "The beautiful fatsia japonica gets its name from the Japanese word ‘fatsi’, meaning ‘eight’,
   because its magnificent leaves have eight lobes. It’s found in the wild in Japan, South Korea and Taiwan,
-  where it lives happily through warm summers and pretty cold winters (it can cope with temperatures as low as −15°C)."
+  where it lives happily through warm summers and pretty cold winters (it can cope with temperatures as low as −15°C).",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1617715172/cqf0udzcsq0m5wctir5s.jpg"
 )
 fatsia_japonica.save!
 
@@ -209,12 +221,13 @@ acer_palmatum = Plant.new(
   light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Acer palmatum",
-  plant_type: "Outdoor tree",
-  air_purifying: true,
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Yes",
   description: "The botanical name acer palmatum means ‘hand-like maple’. The Japanese maple doesn’t just grow in Japan.
   You’ll also find it across other parts of south-east Asia, as well as Russia. In the wild, it will often be found
-  in growing in the dappled light under larger trees."
+  in growing in the dappled light under larger trees.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1563802500/products/acer-palmatum-bb8392.jpg"
 )
 acer_palmatum.save!
 
@@ -224,12 +237,13 @@ tree_fern = Plant.new(
   light: "Low light",
   humidity: "Medium Humidity",
   botanical_name: "Dicksonia antarctica",
-  plant_type: "Outdoor Fern",
-  air_purifying: true,
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Yes",
   description: "Native to Australia and New Zealand, tree fern, brings a prehistoric vibe to your outdoor space
   like something you'd find in Jurassic Park. In fact, the fossil history of Tree Fern dates back 250 million years,
-  which is 50 million years before the beginning of the Jurassic Period. Pretty cool."
+  which is 50 million years before the beginning of the Jurassic Period. Pretty cool.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1644499762/ill3xmar1pzw9vagz79c.jpg"
 )
 tree_fern.save!
 
@@ -239,13 +253,14 @@ cordyline_green = Plant.new(
   light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Cordyline australis",
-  plant_type: "Outdoor evergreen",
-  air_purifying: true,
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Toxic to pets if eaten",
   description: "Despite the name, cordyline australis actually originates from New Zealand,
   where it’s confusingly known as the cabbage tree.The popular name cabbage tree is thought to be due to the fact that
   its leaves used to be eaten and were said to have a cabbage-like flavour. We absolutely do not recommend eating it,
-  whatever your feelings on cabbage. Instead, it should be enjoyed as a really easy, attractive garden plant."
+  whatever your feelings on cabbage. Instead, it should be enjoyed as a really easy, attractive garden plant.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1552939563/products/cordyline-fa2aaf.jpg"
 )
 cordyline_green.save!
 
@@ -255,13 +270,14 @@ snake_plant = Plant.new(
   light: "Medium Light",
   humidity: "Low Humidity",
   botanical_name: "Sansevieria trifasciata",
-  plant_type: "Indoor; evergreen perennial",
-  air_purifying: "Yes",
+  plant_type: "Office",
+  air_purifying: true,
   pet_babe_safe: "Mildly toxic if ingested",
   description: "Low-key as it is, the snake plant has long been treasured all over the world.
   In Nigeria, it's associated with Ogun, the deity of war. In other parts of Africa, it's connected to Oya,
   the bringer of storms. If you’ve never taken care of a plant before and want an easy start,
-  the snake plant is the one for you. You’d have to try pretty hard to actually kill one."
+  the snake plant is the one for you. You’d have to try pretty hard to actually kill one.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1563812091/products/snake-plant-e0fb21.jpg"
 )
 snake_plant.save!
 
@@ -271,13 +287,14 @@ boston_fern = Plant.new(
   light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Nephrolepis Exaltata",
-  plant_type: "Fern; indoor",
-  air_purifying: "Yes",
+  plant_type: "Office",
+  air_purifying: true,
   pet_babe_safe: "Yes",
   description: "You’ll find Boston Ferns in the wild in humid, shady areas, like swamps and forests,
   in South and Central America, the West Indies and Africa. They love anywhere wet,
   hot and not too bright. As a houseplant, they really became popular with the Victorians
-  those guys absolutely loved an exotic houseplant - thriving in the poorly lit, likely damp homes of the 1800s."
+  those guys absolutely loved an exotic houseplant - thriving in the poorly lit, likely damp homes of the 1800s.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1595004047/d1tpxqrnsi6x5pcfrd9o.jpg"
 )
 boston_fern.save!
 
@@ -287,12 +304,13 @@ zamioculcas_zamiifolia = Plant.new(
   light: "Medium Light",
   humidity: "Low Humidity",
   botanical_name: "Zamioculcas zamiifolia",
-  plant_type: "Evergreen perennial; indoor",
-  air_purifying: "Yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Toxic to humans and pets if ingested",
   description: "The ZZ plant, or zamioculcas, is native to Central Africa, but has spread across much of the eastern
   side of the continent too. It’s used to extremes of weather, surviving long periods of drought and then intense
-  downpours. The ways it’s adapted to those conditions are the reason it’s such an excellent, easygoing houseplant."
+  downpours. The ways it’s adapted to those conditions are the reason it’s such an excellent, easygoing houseplant.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1595006301/nlzawrjb9g7jwaqvaywe.jpg"
 )
 zamioculcas_zamiifolia.save!
 
@@ -302,13 +320,14 @@ kentia_palm = Plant.new(
   light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Howea forsteriana",
-  plant_type: "Palm, indoor",
-  air_purifying: "Yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Yes",
   description: "The Kentia palm originated on Lord Howe Island (population: 382),
   a tiny piece of land off the east coast of Australia.
   The island gives the palm its botanical name, Howea forsteriana.
-  It’s a slow grower that can take decades to reach its maximum height of 10 metres"
+  It’s a slow grower that can take decades to reach its maximum height of 10 metres",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1564154575/products/kentia-palm-1ace93.jpg"
 )
 kentia_palm.save!
 
@@ -318,12 +337,13 @@ devils_ivy = Plant.new(
   light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Epipremnum aureum",
-  plant_type: "Evergreen vine; indoor",
-  air_purifying: "Yes",
+  plant_type: "Office",
+  air_purifying: true,
   pet_babe_safe: "Toxic if consumed",
   description: "In the wild, devil's ivy is usually found in forests in south-east Asia.
   It grows up the trunks of large trees, happily living in quite deep shade. That's how it gets its name,
-  devil's ivy, because it's a friend of the darkness."
+  devil's ivy, because it's a friend of the darkness.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1646390374/lrc2cgmyqluhbdcpbiyf.jpg"
 )
 devils_ivy.save!
 
@@ -332,13 +352,14 @@ marble_queen = Plant.new(
   water: "Light Watering",
   light: "Medium Light",
   humidity: "High Humidity",
-  botanical_name: "Epipremnum pinnatum ‘Marble Queen’",
-  plant_type: "Evergreen, indoor",
-  air_purifying: "Yes",
+  botanical_name: "Epipremnum pinnatum",
+  plant_type: "Office",
+  air_purifying: true,
   pet_babe_safe: "Toxic if ingested",
   description: "Pothos are a family of beautiful vines that are popularly known as devil’s ivy.
   This is for two reasons, neither of them sinister. First, in the wild they thrive in dark places.
-  Second, they’re almost impossible to kill. They’ll take a lot of neglect. Not that we’re suggesting you neglect them."
+  Second, they’re almost impossible to kill. They’ll take a lot of neglect. Not that we’re suggesting you neglect them.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1653997621/ragnugvzk0an4hvhxpnr.jpg"
 )
 marble_queen.save!
 
@@ -348,13 +369,14 @@ swiss_cheese_plant = Plant.new(
   light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Monstera deliciosa",
-  plant_type: "Evergreen shrub, indoor",
-  air_purifying: "Yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Toxic if eaten",
   description: "This plant’s latin name, monstera deliciosa, translates as - you’ve probably worked this out
   ‘delicious monster’. And isn’t it just.
   The monster part is likely because of its huge, glossy leaves.
-  The delicious part is because in the wild it bears (apparently) very tasty fruit."
+  The delicious part is because in the wild it bears (apparently) very tasty fruit.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1604604331/d8skgmhddaxfedn4adot.jpg"
 )
 swiss_cheese_plant.save!
 
@@ -364,12 +386,13 @@ tradescantia_nanouk = Plant.new(
   light: "Bright Light",
   humidity: "Medium Humidity",
   botanical_name: "Tradescantia Nanouk",
-  plant_type: "Indoor hanging plant",
-  air_purifying: "Yes",
+  plant_type: "Office",
+  air_purifying: true,
   pet_babe_safe: "Mildly toxic if ingested",
   description: "If you want to introduce a pop of contrast colour to your indoor jungle, the tradescantia is a winner.
   Those long elegant leaves are finely striped green and cream on the top, with an intense purple underside.
-  This variety has long stems that look fantastic tumbling from shelves or hanging pots."
+  This variety has long stems that look fantastic tumbling from shelves or hanging pots.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1599574593/pgopwskwheffk8qo0l3d.jpg"
 )
 tradescantia_nanouk.save!
 
@@ -379,12 +402,13 @@ scheffera_on_lava = Plant.new(
   light: "Medium Light",
   humidity: "High Humidity",
   botanical_name: "Schefflera actinophylla ",
-  plant_type: "Evergreen perennial, indoor",
-  air_purifying: "Yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Toxic to animals",
   description: "In the wild, this schefflera is most commonly found in Taiwanese forests,
    where it might grow as tall as nine metres. You’d need a considerably bigger rock for that.
-  Growing a schefflera on lava looks very elegant and makes it very easy to look after."
+  Growing a schefflera on lava looks very elegant and makes it very easy to look after.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1563803758/products/schefflera-on-lava-c06e07.jpg"
 )
 scheffera_on_lava.save!
 
@@ -394,12 +418,13 @@ curly_spider_plant = Plant.new(
   light: "Medium Light",
   humidity: "Low Humidity",
   botanical_name: "Chlorophytum comosum",
-  plant_type: "Evergreen perennial, indoor",
-  air_purifying: "Yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Yes",
   description: "A classic of the houseplant world, the curly spider plant has been grown indoors for decades because
   it’s incredibly easy to take care of. In the wild, it’s most commonly found in tropical parts of Africa and
-  Australia."
+  Australia.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1539776219/products/chlorophytum-comosum-bonnie-1f3b6c.jpg"
 )
 curly_spider_plant.save!
 
@@ -409,14 +434,15 @@ aloe_vera = Plant.new(
   light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Aloe barbadensis",
-  plant_type: "Succulent, indoor",
-  air_purifying: "Yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Toxic to pets if ingested",
   description: "Aloe vera is probably one of the best-known houseplants.
   The gel inside its leaves is famously used for soothing burns, but it’s more than just a green first aid kit.
   This is a plant that has adapted to live all over the world. A wild aloe vera could grow as big as a metre across.
   If you think that’s impressive, its flower spike can reach 90cm.  They look a bit like the flower known as red hot
-  poker."
+  poker.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1564400741/products/aloe-vera-dc64ac.jpg"
 )
 aloe_vera.save!
 
@@ -426,14 +452,15 @@ yucca_elephantipes = Plant.new(
   light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Yucca elephantipes",
-  plant_type: "Evergreen shrub, indoor",
-  air_purifying: "yes",
+  plant_type: "Indoor",
+  air_purifying: true,
   pet_babe_safe: "Toxic to pets if ingested",
   description: "Although it’s most likely to be found in the wild in Mexico or Central America,
   this particular yucca has been grown in Europe since the 1850s. It would have been prized by rich Victorians
   for its very exotic appearance. The more exotic your houseplants, the wealthier you looked.
   The ‘elephantipes’ part of the name is for the fact that the trunk of a mature yucca looks like an elephant’s foot.
-  Fully grown, it can be as tall as six metres."
+  Fully grown, it can be as tall as six metres.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1659702992/lgzvsnlnfkarcbwer0s3.jpg"
 )
 yucca_elephantipes.save!
 
@@ -443,14 +470,15 @@ fargesia_bamboo = Plant.new(
   light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Umbrella bamboo",
-  plant_type: "Outdoor evergreen",
-  air_purifying: "No",
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Yes (especially for pandas)",
   description: "If there are two things most of us know about bamboo they’re that it produces hollow canes and pandas
   eat it. There are over 1,000 different bamboo species, growing natively on every continent except Europe.
   They almost all have hollow stems, grow in dense clumps and many grow very, very quickly. Some species are known
   to grow at a rate of almost 4cm per hour. Yes, per hour. This one, umbrella bamboo, is a lot slower than that.
-  but still a quick grower."
+  but still a quick grower.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1556714555/products/fargesia-bamboo-943aa5.jpg"
 )
 fargesia_bamboo.save!
 
@@ -460,13 +488,14 @@ cycad = Plant.new(
   light: "Medium Light",
   humidity: "Medium Humidity",
   botanical_name: "Cycas revoluta",
-  plant_type: "Outdoor evergreen",
-  air_purifying: "Yes",
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Very toxic if ingested",
   description: "Despite the very palmy-appearance, this isn’t actually a palm. It’s a cycad. Cycad have a woody trunk
   like a palm, but their leaves tend to be harder. The cycad family has a very,
   very long history. Versions of the cycad were around when dinosaurs walked the Earth over 250 million years ago.
-  This plant has seen some things."
+  This plant has seen some things.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1644501677/mhoho1yzuhhr3hl1gqq5.jpg"
 )
 cycad.save!
 
@@ -476,32 +505,34 @@ kumquat_tree = Plant.new(
   light: "Bright Light",
   humidity: "Low Humidity",
   botanical_name: "Citrus japonica",
-  plant_type: "Outdoor citrus tree",
-  air_purifying: "Yes",
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Mildly toxic to pets",
   description: "Native to China, it was brought to Europe in the 1800s and has been popular ever since.
   A kumquat tree would be a prized plant in a Victorian conservatory.
   The kumquat is one of the more unusual citrus fruits. You eat the entire thing, peel and all,
   and it’s a bit of an acquired taste. The mix of sweetness and bitterness makes it a cooking ingredient with many uses.
-  Even if you don’t eat it, as a plant it’s really lovely.  "
+  Even if you don’t eat it, as a plant it’s really lovely.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1617297084/bj4v0eajtjgdor13txvm.jpg"
 )
 kumquat_tree.save!
 
 climbing_rose_white = Plant.new(
-  name: "Climbing rose - white",
+  name: "Rose",
   water: "Light Watering",
   light: "Bright Light",
   humidity: "Medium Humidity",
   botanical_name: "Rosa",
-  plant_type: "Woody perennial flowering plant / Outdoor",
-  air_purifying: "No",
+  plant_type: "Outdoor",
+  air_purifying: false,
   pet_babe_safe: "Non-toxic, but watch out for the spiky thorns!",
   description: "Rosa doesn't need much introduction - with her flowers and sweet scent, Rosa's beauty is truly timeless.
   The remains of the first discovered rose dates back to 40 million years ago, and in China, she's been a garden
   favourite for at least 5,000 years. Ever the romantic, Rose symbolises love, sensuality, and beauty
   she's a famed aphrodisiac. Her petals are used to make perfumes, oils, and delicious treats
   (she's pretty popular in Turkish cuisine), and her light antiseptic and anti-inflammatory properties make her a
-  popular choice in skincare."
+  popular choice in skincare.",
+  plants_images: "https://res.cloudinary.com/patch-gardens/image/upload/c_fill,f_auto,h_840,q_auto:good,w_840/v1643989649/yx8qi0em13dfwibqrrls.jpg"
 )
 climbing_rose_white.save!
 
