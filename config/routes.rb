@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "leaderboard", to: "leaderboards#leaderboard"
   get "garden", to: "plants#garden"
   get "plants/detail_game", to: "plants#detail_game"
-
+  get "treatment", to: "pages#treatment"
   resources :logs, only: :index
   resources :plants do
     resources :logs, only: :create

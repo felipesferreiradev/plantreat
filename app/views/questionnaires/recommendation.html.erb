@@ -6,7 +6,7 @@
  <%# <input type="text" class="discover_search_bar" > %>
     <div class="search_bar d-flex justify-content-between">
         <%= form_with url: recommendation_path,method: :get do %>
-        <%= text_field_tag :query, params[:query] %>
+        <%= text_field_tag :query %>
         <%= submit_tag "Search", class: "btn btn-primary m-0 p-0 w-50",style:"font-size:small" %>
         <% end %>
     </div>
@@ -16,32 +16,37 @@
     <div class="cd-flex justify-content-center mt-3">
       <div class="row d-flex gap-3">
         <div class="col d-flex flex-column align-items-center">
+         <%= link_to recommendation_path(query: "indoor") do %>
             <img class="p-2" src="https://img.icons8.com/external-flaticons-flat-flat-icons/452/external-plant-plants-flaticons-flat-flat-icons-7.png"
               style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
-              action="<%= recommendation_path %>" method="GET"
-              type="submit">
+              >
             <p class="plant_detail_label_content mt-1">indoor</p>
+          <% end %>
+
         </div>
 
         <div class="col d-flex flex-column align-items-center">
+         <%= link_to recommendation_path(query: "outdoor") do %>
             <img class="p-2" src="https://img.icons8.com/color-glass/452/growing-plant.png"
-              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
-              type="submit">
+              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">outdoor</p>
+          <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
+          <%= link_to recommendation_path(query: "office") do %>
             <img class="p-2" src="https://img.icons8.com/color-glass/452/home-office.png"
-              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
-              type="submit">
+              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">office</p>
+          <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
-          <img class="p-2" src="https://img.icons8.com/color/344/medium-icons.png"
-            style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
-            type="submit">
-          <p class="plant_detail_label_content mt-1">purifying</p>
+          <%= link_to recommendation_path(query: "purifying") do %>
+            <img class="p-2" src="https://img.icons8.com/color/344/medium-icons.png"
+              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">purifying</p>
+          <% end %>
         </div>
 
       </div>
