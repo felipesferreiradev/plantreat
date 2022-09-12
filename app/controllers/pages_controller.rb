@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def profile
+    @garden = Plant.new
   end
 
   def options
