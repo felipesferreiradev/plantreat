@@ -16,23 +16,33 @@
     <div class="cd-flex justify-content-center mt-3">
       <div class="row d-flex gap-3">
         <div class="col d-flex flex-column align-items-center">
-            <img class="p-2" src="https://img.icons8.com/external-flaticons-flat-flat-icons/452/external-plant-plants-flaticons-flat-flat-icons-7.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
+        <form action="<%= recommendation_path %>"  method="GET">
+            <img class="p-2" src="https://img.icons8.com/external-flaticons-flat-flat-icons/452/external-plant-plants-flaticons-flat-flat-icons-7.png"
+              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
+              type="submit">
             <p class="plant_detail_label_content mt-1">indoor</p>
+        </form>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
-            <img class="p-2" src="https://img.icons8.com/color-glass/452/growing-plant.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
+            <img class="p-2" src="https://img.icons8.com/color-glass/452/growing-plant.png"
+              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
+              type="submit">
             <p class="plant_detail_label_content mt-1">outdoor</p>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
-            <img class="p-2" src="https://img.icons8.com/color-glass/452/home-office.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
+            <img class="p-2" src="https://img.icons8.com/color-glass/452/home-office.png"
+              style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
+              type="submit">
             <p class="plant_detail_label_content mt-1">office</p>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
-          <img class="p-2" src="https://img.icons8.com/color/344/medium-icons.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
-          <p class="plant_detail_label_content mt-1">other</p>
+          <img class="p-2" src="https://img.icons8.com/color/344/medium-icons.png"
+            style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px"
+            type="submit">
+          <p class="plant_detail_label_content mt-1">purifying</p>
         </div>
 
       </div>
@@ -41,13 +51,12 @@
        <% @plants.each do |plant| %>
        <%= link_to plant_path(plant) do %>
           <div class="img_label">
-          <label class="bottom_label"><%=plant.botanical_name%></label>
-          <img src="<%= plant.plants_images %>"  class="plant_img" alt="">
-          <label class="top_label"><%=plant.name%></label>
-         <%= link_to "See Plant", plant_path(plant) %>
-        </div>
+            <label class="bottom_label"><%=plant.botanical_name%></label>
+            <img src="<%= plant.plants_images %>"  class="plant_img" alt="">
+            <label class="top_label"><%=plant.name%></label>
+          </div>
+        <% end %>
       <% end %>
     </div>
-
 </div>
   <%= render "shared/navbar"%>
