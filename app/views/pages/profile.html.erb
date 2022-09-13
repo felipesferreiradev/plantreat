@@ -1,10 +1,8 @@
 <%= render "shared/navbar" %>
 <div class="container garden_container">
-
   <div class="d-flex justify-content-center m-9">
-    <%= image_tag "avatar.png", style:"height: 80px; object-fit: cover; margin-top: 15px",id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+    <%= image_tag "avatar.png", style:"height: 80px; object-fit: cover; margin-top: 15px",id: "navbarDropdown", 'aria-haspopup': true, 'aria-expanded': false %>
   </div>
-
   <%# <%= image_tag "plantreat_logo.png", class:"garden_logo", style: "height:60px; width:60px"%>
   <p style="text-align:center; margin-top: 20px; font-weight: bold; font-size: 20px">Hi, <%= current_user.username %></p>
   <h5 style="margin-top: 20px; text-align:center">Your garden</h5>
