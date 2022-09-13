@@ -56,7 +56,7 @@
        <%= link_to plant_path(plant) do %>
           <div class="img_label">
             <label class="bottom_label"><%=plant.botanical_name%></label>
-            <img src="<%= plant.plants_images %>"  class="plant_img" alt="">
+              <img src="<%=plant.plants_images%>" class="plant_img" alt="">
             <label class="top_label"><%=plant.name%></label>
           </div>
         <% end %>
