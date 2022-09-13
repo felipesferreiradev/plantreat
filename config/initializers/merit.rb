@@ -49,18 +49,6 @@ Merit.setup do |config|
       description: "Medicate the plant",
       custom_fields: { difficulty: :silver }
     )
-    Merit::Badge.create!(
-      id: 9,
-      name: "year-member",
-      description: "Active member for a year",
-      custom_fields: { difficulty: :silver }
-    )
-    Merit::Badge.create!(
-      id: 1,
-      name: "year-member",
-      description: "Active member for a year",
-      custom_fields: { difficulty: :silver }
-    )
   end
   # Check rules on each request or in background
   # config.checks_on_each_request = true
