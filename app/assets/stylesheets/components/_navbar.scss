@@ -11,23 +11,15 @@
   width: 40px;
 }
 
-// .navbar-bar{
-//   position: fixed;
-//   bottom: 0;
-// }
-
 .navbar {
-
-
   height: 8%;
-
   position:fixed;
-  bottom:0;
-  width:100%;
+	bottom:0;
+	z-index:1000;
+  width: 100%;
   border: lightgrey solid 1px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  z-index: 1000;
 }
 .home{
  color: #725B39;
