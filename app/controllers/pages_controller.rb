@@ -10,4 +10,16 @@ class PagesController < ApplicationController
   def profile
     @plants = current_user.plants
   end
+
+  def not_growing
+  end
+
+  def leaves
+  end
+
+  def signs_of_pest
+  end
+
+  def roots_sticking_out
+  end
 end
