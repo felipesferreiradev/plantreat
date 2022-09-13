@@ -1,6 +1,6 @@
 class Plant < ApplicationRecord
   has_many :logs
-  has_one_attached :image
+  # has_one_attached :image
   validates :name, presence: true
 
   include PgSearch::Model
