@@ -23,4 +23,8 @@ class PagesController < ApplicationController
 
   def roots_sticking_out
   end
+
+  def treatment
+    @plant = Plant.find(params[:id])
+  end
 end

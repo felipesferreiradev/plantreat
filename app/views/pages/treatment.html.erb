@@ -1,24 +1,53 @@
 <div class="bg_treatment">
   <%= render "shared/navbar" %>
-  <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
+ <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="<%=@plant.plants_images%> " class="d-block w-100 rounded" style="object-fit: cover; height: 250px">
+      </div>
+      <div class="carousel-item">
+        <img src="<%=@plant.plant_image_2%>" class="d-block w-100 rounded" style="object-fit: cover; height: 250px">
+      </div>
+      <div class="carousel-item">
+        <img src="<%=@plant.plant_image_3%>" class="d-block w-100 rounded" style="object-fit: cover; height: 250px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
   <h2 class="q">We are sorry to hear that what happend to your plant?</h2>
   <div class="signs">
+  <div class="pic_1">
     <%= link_to  treatment_not_growing_path do%>
       <h1>not growing?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/4772/4772398.png" class="not_growing"alt="">
     <% end %>
+    </div>
+    <div class="pic_2">
     <%= link_to  treatment_leaves_path do%>
       <h1>leaves?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="leaves" alt="">
     <% end %>
+    </div>
+    <div class="pic_3">
     <%= link_to  treatment_roots_sticking_out_path do%>
       <h1>roots sticking out?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/3239/3239349.png" class="roots" alt="">
-
     <% end %>
+    </div>
+    <div class="pic_4">
     <%= link_to  treatment_signs_of_pest_path do%>
       <h1>signs of pests?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/2674/2674493.png" class="pests" alt="">
     <% end %>
+    </div>
   </div>
 </div>

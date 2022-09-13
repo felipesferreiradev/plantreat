@@ -11,11 +11,12 @@ Rails.application.routes.draw do
   get "leaderboard", to: "leaderboards#leaderboard"
   get "garden", to: "plants#garden"
   get "plants/detail_game/:id", to: "plants#detail_game", as: "plant_game"
-  get "treatment", to: "pages#treatment"
+  get "treatment/:id", to: "pages#treatment", as: "treatment"
   get "treatment/not_growing", to: "pages#not_growing"
   get "treatment/leaves", to: "pages#leaves"
   get "treatment/roots_sticking_out", to: "pages#roots_sticking_out"
   get "treatment/signs_of_pest", to: "pages#signs_of_pest"
+
   resources :logs, only: :index
   resources :plants do
     resources :logs, only: :create

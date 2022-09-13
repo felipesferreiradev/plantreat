@@ -1,14 +1,17 @@
 .bg_treatment{
-  color:#E9FFE3;
+  background-color: white;
+  height: 100vh;
 }
 .signs{
-  background-color:  #E9FFE3;
+
   color: #725B39;
   font-size: smaller;
+  border-radius: 50px;
 
 }
 
 .not_growing{
+
   width: 50px;
   height: 50px;
 }
@@ -28,15 +31,41 @@
   height: 50px;
 }
 
-.other{
-  font-size: smaller;
-}
 
 .signs{
   font-size: smaller;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  // grid-gap: 37px;
-  margin: -7px;
-  padding-left: 28px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+  padding: 14px;
+}
+
+.q{
+  margin-top: 16px;
+  color:#725B39;
+}
+
+.pic_1{
+  border-radius: 20px;
+  background-color:  #E9FFE3;
+
+}
+
+.pic_2{
+  border-radius: 20px;
+  background-color:  #E9FFE3;
+
+}
+
+.pic_3{
+  border-radius: 20px;
+  background-color:  #E9FFE3;
+
+}
+
+.pic_4{
+  border-radius: 20px;
+  background-color:  #E9FFE3;
+
 }
