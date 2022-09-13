@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   def options
   end
+
+  def treatment
+    @plant = Plant.find(params[:id])
+  end
 end
