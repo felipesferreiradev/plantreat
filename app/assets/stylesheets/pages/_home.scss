@@ -20,12 +20,22 @@
   font-size: 15px;
 }
 
+.btn a {
+  text-decoration: none;
+  color: #C8D264;
+  font-size: 16px;
+  font-style: normal;
+  margin: 0%;
+}
+
+.btn a:hover {
+  color: #fff;
+}
+
 a {
   text-decoration: underline;
   color: #C8D264;
   font-size: 12px;
-  margin-left: 20%;
-  margin-bottom: 20px;
   font-style: oblique;
 }
 
