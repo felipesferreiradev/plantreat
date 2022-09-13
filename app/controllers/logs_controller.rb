@@ -13,8 +13,9 @@ class LogsController < ApplicationController
     @plant = Plant.find(params[:plant_id])
     @log.plant = @plant
     @log.save!
-    redirect_to logs_path
+    redirect_to profile_path
   end
+
   def index
     @logs = Log.all
   end

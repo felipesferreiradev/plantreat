@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_13_052220) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_13_081617) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,10 +27,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_13_052220) do
   create_table "logs", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "plant_id", null: false
-    t.boolean "watered"
-    t.boolean "fed"
-    t.boolean "soil_changed"
-    t.boolean "light"
+    t.boolean "watered", default: false
+    t.boolean "fed", default: false
+    t.boolean "soil_changed", default: false
+    t.boolean "light", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["plant_id"], name: "index_logs_on_plant_id"

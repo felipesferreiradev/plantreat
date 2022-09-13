@@ -3,7 +3,8 @@
 <div class="container plant_detail_container">
 
     <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
-    <h2 class="m-0 p-2">Round Cactus</h2>
+    <h2 class="m-0 p-2"><%=@plant.name %></h2>
+
     <%# show points %>
     <div>
         <h5 class="mt-0 p-0 text-center" style="color: #725B39;">150 points</h5>
