@@ -12,6 +12,11 @@ class PagesController < ApplicationController
     @plants = current_user.plants
   end
 
+  def treatment
+    @plant = Plant.find(params[:id])
+    @log = Log.new
+  end
+
   def not_growing
   end
 
@@ -24,7 +29,4 @@ class PagesController < ApplicationController
   def roots_sticking_out
   end
 
-  def treatment
-    @plant = Plant.find(params[:id])
-  end
 end
