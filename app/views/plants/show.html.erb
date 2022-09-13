@@ -50,7 +50,9 @@
         <p class="plant_show_p" style="color: #725B39"><%= @plant.description %></p>
     </div>
     <div class = "d-flex justify-content-center">
-      <%= link_to "Add to my Garden", logs_path(@plant), class:"btn btn-primary mt-4 w-50" %>
+      <%= simple_form_for [@plant, @log] do |f| %>
+        <%= f.submit "Add to my Garden", class:"btn btn-primary mt-4 w-70" %>
+      <% end %>
     </div>
     </div>
   </div>

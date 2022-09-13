@@ -6,4 +6,8 @@ class PagesController < ApplicationController
 
   def options
   end
+
+  def profile
+    @plants = current_user.plants
+  end
 end

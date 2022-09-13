@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "recommendation", to: "questionnaires#indoor"
   get "leaderboard", to: "leaderboards#leaderboard"
   get "garden", to: "plants#garden"
-  get "plants/detail_game", to: "plants#detail_game"
+  get "plants/detail_game/:id", to: "plants#detail_game", as: "plant_game"
   get "treatment", to: "pages#treatment"
   resources :logs, only: :index
   resources :plants do
