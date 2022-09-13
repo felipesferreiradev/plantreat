@@ -1,6 +1,6 @@
 class User < ApplicationRecord
-  has_merit
-  has_one_attached :profile_picture
+  has_one_attached :photo
+  # has_merit
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :logs
@@ -9,7 +9,7 @@ class User < ApplicationRecord
   validates :username, presence: true
 
 
-  after_create :ensure_points_to_user_on_signup
+  # after_create :ensure_points_to_user_on_signup
 
   private
 
