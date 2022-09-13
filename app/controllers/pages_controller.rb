@@ -1,12 +1,14 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :index, :profile ]
+  skip_before_action :authenticate_user!, only: [:home, :option]
+  skip_before_action :set_plant, only: [:home, :option]
 
   def home
   end
 
-  def profile
+  def option
   end
 
-  def options
+  def profile
+    @plants = current_user.plants
   end
 end
