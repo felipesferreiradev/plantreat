@@ -21,12 +21,16 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #C8D264;
+  font-size: 12px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  font-style: oblique;
 }
 
 a:hover {
-  color: white;
+  color: #725B39;
 }
 
 
