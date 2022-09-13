@@ -1,45 +1,20 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-        <% if user_signed_in? %>
-
-    <%= link_to recommendation_path do%>
-        <img src="https://img.icons8.com/small/344/home.png" alt="" style="width:30px; height:30px; margin-left:20px">
-    <% end %>
-    <%= link_to leaderboard_path do%>
-      <img src="https://img.icons8.com/small/344/ranking.png" alt="" style="width:30px; height:30px; margin-left:20px">
-    <% end %>
-    <% unless current_user.logs.empty? %>
-      <%= link_to plant_game_path(@plant) do%>
-        <img src="https://img.icons8.com/windows/344/potted-plant.png" alt="" style="width:30px; height:30px; margin-left:20px">
+    <% if user_signed_in? %>
+      <%= link_to recommendation_path do%>
+          <img src="https://img.icons8.com/small/344/home.png" alt="" style="width:30px; height:30px; margin-left:20px">
+      <% end %>
+      <%= link_to leaderboard_path do%>
+        <img src="https://img.icons8.com/small/344/ranking.png" alt="" style="width:30px; height:30px; margin-left:20px">
+      <% end %>
+      <% unless current_user.logs.empty? %>
+        <%= link_to plant_game_path(@plant) do%>
+          <img src="https://img.icons8.com/windows/344/potted-plant.png" alt="" style="width:30px; height:30px; margin-left:20px">
+        <% end %>
+      <% end %>
+      <%= link_to profile_path do%>
+        <img src="https://img.icons8.com/small/344/user.png" alt="" style="width:30px; height:30px; margin-left:20px; margin-right:20px">
       <% end %>
     <% end %>
-    <%= link_to profile_path do%>
-      <img src="https://img.icons8.com/small/344/user.png" alt="" style="width:30px; height:30px; margin-left:20px; margin-right:20px">
-    <% end %>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-          <%# <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
-          <%# </li>
-          <li class="nav-item">
-            <%= link_to "Messages", "#", class: "nav-link" %>
-          <%# </li>  %>
-          <%= button_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, method: :delete, class: "nav-link" %>
-
-          <li class="nav-item dropdown">
-            <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Action", "#", class: "dropdown-item" %>
-              <%= link_to "Another action", "#", class: "dropdown-item" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-            </div>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
-      </ul>
-    </div>
   </div>
 </div>
