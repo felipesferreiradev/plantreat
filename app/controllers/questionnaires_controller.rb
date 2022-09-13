@@ -1,5 +1,6 @@
 class QuestionnairesController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :show, :recommendation, :questionnaire_own_a_plant, :questionnaire_looking_for_a_plant ]
+  # skip_before_action :set_plant
 
   def recommendation
     @plants = Plant.all

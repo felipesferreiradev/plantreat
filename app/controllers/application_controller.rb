@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
-  before_action :set_plant
+  before_action :set_plant, unless: :devise_controller?
   before_action :configure_permitted_parameters, if: :devise_controller?
 
   def configure_permitted_parameters
@@ -14,6 +14,9 @@ class ApplicationController < ActionController::Base
   end
 
   def set_plant
-   @plant = current_user.logs.last.plant
+   @logs = current_user.logs
+    unless @logs.empty?
+      @plant = @logs.last.plant
+    end
   end
 end
