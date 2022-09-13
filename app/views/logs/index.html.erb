@@ -14,8 +14,7 @@
     <div class="card-body d-flex">
       <img src="https://images.unsplash.com/photo-1509645470620-c9c349934693?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cm91bmQlMjBjYWN0dXN8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" style="width:150px; object-fit: cover">
         <div class="d-flex flex-column m-3">
-          <h5>Plant name</h5>
-          <p>some description</p>
+          <h5><%=@logs.name %></h5>
           <%= link_to "view",  plants_detail_game_path, class:"btn btn-primary mt-0 w-80" %>
         </div>
     </div>
