@@ -19,4 +19,24 @@ class LogsController < ApplicationController
   def index
     @logs = Log.all
   end
+
+  def detail_game
+    @log = Log.find(params[:id])
+    @plant = @log.plant
+  end
+
+  def add_water
+    @log = Log.find(params[:id])
+    @log.watered = true
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
+  def add_sun
+    @log = Log.find(params[:id])
+    @log.light = true
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
+
+
 end

@@ -9,11 +9,11 @@
   <h5 style="margin-top: 40px; margin-: 40px; text-align:left; color: #745D3C;">Your garden</h5>
 
   <%# cards %>
-  <% @plants.each do |plant| %>
-       <%= link_to plant_game_path(plant) do %>
+  <% @logs.each do |log| %>
+       <%= link_to detail_game_log_path(log) do %>
           <div class="img_label">
-              <img src="<%=plant.plants_images%>" class="plant_img" alt="">
-            <label class="top_label"><%=plant.name%></label>
+              <img src="<%=log.plant.plants_images%>" class="plant_img" alt="">
+            <label class="top_label"><%=log.plant.name%></label>
           </div>
         <% end %>
       <% end %>
