@@ -33,19 +33,19 @@
     <% end %>
     </div>
     <div class="pic_2">
-    <%= link_to leaves_path, class: "leave_link" do%>
+    <%= link_to leaves_path(:plant_id => @plant.id), class: "leave_link" do%>
       <h1>colour changing?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="leaves" alt="">
     <% end %>
     </div>
     <div class="pic_3">
-    <%= link_to roots_sticking_out_path, class: "roots_sticking_out_link" do%>
+    <%= link_to roots_sticking_out_path(:plant_id => @plant.id), class: "roots_sticking_out_link" do%>
       <h1>roots sticking out?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/3239/3239349.png" class="roots" alt="">
     <% end %>
     </div>
     <div class= "pic_4">
-    <%= link_to signs_of_pest_path, class: "signs_of_pest_link" do%>
+    <%= link_to signs_of_pest_path(:plant_id => @plant.id), class: "signs_of_pest_link" do%>
       <h1>signs of pests?</h1>
       <img src="https://cdn-icons-png.flaticon.com/512/2674/2674493.png" class="pests" alt="">
     <% end %>

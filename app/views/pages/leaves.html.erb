@@ -1,1 +1,13 @@
-Leaves
+<div class="bg_leaves">
+  <%= render "shared/navbar" %>
+  <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
+  <br>
+  <div class="container p-4 text-center">
+    <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="leaves"alt="">
+          <h3 class="subtitle_leaves">Omg...</h3>
+          <h3 class="title_leaves">Your leaves are changing color!</h3>
+
+    <h1 class="description_leaves"><%= @plant.name %></h1>
+    <p>Lorem ipsum display text to see what to do next with this plant</p>
+  </div>
+</div>
