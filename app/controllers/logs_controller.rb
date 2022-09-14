@@ -49,6 +49,13 @@ class LogsController < ApplicationController
     redirect_to detail_game_log_path(@log)
   end
 
+  def remove_sun
+    @log = Log.find(params[:id])
+    @log.light = false
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
+
   def add_soil
     @log = Log.find(params[:id])
     @log.soil_changed = true
@@ -57,12 +64,25 @@ class LogsController < ApplicationController
     redirect_to detail_game_log_path(@log)
   end
 
+  def remove_soil
+    @log = Log.find(params[:id])
+    @log.soil_changed = false
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
+
   def add_food
     @log = Log.find(params[:id])
     @log.fed = true
     @log.save!
     @user_histories = UserHistory.create(action_name: "Add food", action_date: Date.today, user: current_user, log: @log )
-    current_user.add_points(20)
+    redirect_to detail_game_log_path(@log)
+  end
+
+  def remove_food
+    @log = Log.find(params[:id])
+    @log.fed = false
+    @log.save
     redirect_to detail_game_log_path(@log)
   end
 end

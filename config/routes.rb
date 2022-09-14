@@ -8,8 +8,11 @@ Rails.application.routes.draw do
       get :add_water
       get :remove_water
       get :add_sun
+      get :remove_sun
       get :add_soil
+      get :remove_soil
       get :add_food
+      get :remove_food
     end
   end
   resources :plants do
