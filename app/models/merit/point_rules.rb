@@ -16,6 +16,15 @@ module Merit
       score 10, to: :user, on: 'logs#add_water' do |log|
         log.watered
       end
+      score 10, to: :user, on: 'logs#add_sun' do |log|
+        log.watered
+      end
+      score 30, to: :user, on: 'logs#add_soil' do |log|
+        log.watered
+      end
+      score 20, to: :user, on: 'logs#add_food' do |log|
+        log.watered
+      end
 
       #  model_name: 'User'
       # score 15, :on => 'reviews#create', :to => [:reviewer, :reviewed]
