@@ -27,7 +27,7 @@
   <h2 class="q">Let Us help you!</h2>
   <div class="signs">
   <div class="pic_1">
-    <%= link_to not_growing_path, class: "not_growing_link" do%>
+    <%= link_to not_growing_path(:plant_id => @plant.id), class: "not_growing_link" do%>
       <img src="https://cdn-icons-png.flaticon.com/512/4772/4772398.png" class="not_growing"alt="">
       <h3>not growing?</h3>
     <% end %>
