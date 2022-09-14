@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   end
 
   def profile
-    @plants = current_user.plants
+    @logs = current_user.logs
   end
 
   def treatment

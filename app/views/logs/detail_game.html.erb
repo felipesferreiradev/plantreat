@@ -23,23 +23,44 @@
     <div class="d-flex justify-content-center mt-5">
       <div class="row d-flex gap-3">
         <div class="col d-flex flex-column align-items-center">
-            <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+
+         <% if @log.watered%>
+          <%= link_to remove_water_log_path(@log) do %>
+            <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Water</p>
+          <% end %>
+         <% else %>
+          <%= link_to add_water_log_path(@log) do %>
+              <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+              <p class="plant_detail_label_content mt-1">Water</p>
+          <% end %>
+         <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
+          <%= link_to add_sun_log_path(@log) do %>
             <img class="p-2" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Sun</p>
+          <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
+          <%= link_to add_soil_log_path(@log) do %>
             <img class="p-2" src="https://img.icons8.com/external-icongeek26-flat-icongeek26/344/external-Fertile-Soil-gardening-icongeek26-flat-icongeek26.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Soil</p>
+          <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
-          <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
-          <p class="plant_detail_label_content mt-1">Food</p>
+          <%= link_to add_food_log_path(@log) do %>
+            <img class="p-2" src="https://img.icons8.com/color/344/paper-bag-with-seeds.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Food</p>
+          <% end %>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center">
+            <img class="p-2" src="https://img.icons8.com/fluency/344/add-camera.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Photo</p>
         </div>
 
       </div>
@@ -48,7 +69,7 @@
     <%# add new picture button %>
 
     <div class="d-flex justify-content-center mt-3 ms-5 mb-5">
-    <%= simple_form_for :photo do |f| %>
+    <%= simple_form_for :log do |f| %>
       <%= f.input :photo, as: :file, direct_upload: true, :class => "add_pic" %>
       <%= f.button :submit, "Upload" %>
     <% end %>
@@ -58,43 +79,24 @@
 
     <%#history %>
     <div>
-        <h3 class="mt-3" style="color: #725B39;">History</h3>
+        <h3 class="mt-3" style="color: #725B39;">Treatment history</h3>
+        <h3><%= current_user.points %></h3>
     </div>
 
     <%#all history cards%>
 
    <div class="all_history_cards" >
-
+   <% @user_histories.each do |user_history| %>
       <div class="card history_card">
         <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
+          <p class="m-0 p-0" style="color:lightgray"><%=user_history.action_date %></p>
           <div class="d-flex justify-content-between mt-2">
-            <h6>Water</h6>
-            <p class="plant_detail_score"> +10 points</p>
+            <h6><%=user_history.action_name %></h6>
+            <p class="plant_detail_score"> +20 points</p>
           </div>
         </div>
       </div>
-
-            <div class="card history_card">
-        <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
-          <div class="d-flex justify-content-between mt-2">
-            <h6>Sun</h6>
-            <p class="plant_detail_score"> +10 points</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card history_card">
-        <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
-          <div class="d-flex justify-content-between mt-2">
-            <h6>Soil</h6>
-            <p class="plant_detail_score"> +10 points</p>
-          </div>
-        </div>
-      </div>
-
+      <% end %>
       <%#please don't remove this br br%>
       <br><br>
 

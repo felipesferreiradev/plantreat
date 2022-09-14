@@ -19,4 +19,50 @@ class LogsController < ApplicationController
   def index
     @logs = Log.all
   end
+
+  def detail_game
+    @log = Log.find(params[:id])
+    @plant = @log.plant
+    @user_histories = UserHistory.where(user: current_user, log: @log)
+  end
+
+  def add_water
+    @log = Log.find(params[:id])
+    @log.watered = true
+    @log.save!
+    @user_histories = UserHistory.create(action_name: "Add water", action_date: Date.today, user: current_user, log: @log )
+    redirect_to detail_game_log_path(@log)
+  end
+
+  def remove_water
+    @log = Log.find(params[:id])
+    @log.watered = false
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
+
+  def add_sun
+    @log = Log.find(params[:id])
+    @log.light = true
+    @log.save!
+    @user_histories = UserHistory.create(action_name: "Check light", action_date: Date.today, user: current_user, log: @log )
+    redirect_to detail_game_log_path(@log)
+  end
+
+  def add_soil
+    @log = Log.find(params[:id])
+    @log.soil_changed = true
+    @log.save!
+    @user_histories = UserHistory.create(action_name: "Change soil", action_date: Date.today, user: current_user, log: @log )
+    redirect_to detail_game_log_path(@log)
+  end
+
+  def add_food
+    @log = Log.find(params[:id])
+    @log.fed = true
+    @log.save!
+    @user_histories = UserHistory.create(action_name: "Add food", action_date: Date.today, user: current_user, log: @log )
+    current_user.add_points(20)
+    redirect_to detail_game_log_path(@log)
+  end
 end
