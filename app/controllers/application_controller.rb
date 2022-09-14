@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   def set_plant
    @logs = current_user.logs
     unless @logs.empty?
-      @plant = @logs.last.plant
+      @log = @logs.last
     end
   end
 end

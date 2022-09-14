@@ -34,12 +34,12 @@ class LogsController < ApplicationController
     redirect_to detail_game_log_path(@log)
   end
 
-  # def remove_water
-  #   @log = Log.find(params[:id])
-  #   @log.watered = false
-  #   @log.save!
-  #   redirect_to detail_game_log_path(@log)
-  # end
+  def remove_water
+    @log = Log.find(params[:id])
+    @log.watered = false
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
 
   def add_sun
     @log = Log.find(params[:id])
