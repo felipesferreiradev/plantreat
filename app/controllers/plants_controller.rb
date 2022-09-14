@@ -4,9 +4,4 @@ class PlantsController < ApplicationController
     @plant = Plant.find(params[:id])
     @log = Log.new
   end
-
-  def detail_game
-    @plant = Plant.find(params[:id])
-  end
-
 end
