@@ -71,9 +71,9 @@
    <% @user_histories.each do |user_history| %>
       <div class="card history_card">
         <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray"><%=@user_histories.action_date %></p>
+          <p class="m-0 p-0" style="color:lightgray"><%=@user_history.action_date %></p>
           <div class="d-flex justify-content-between mt-2">
-            <h6><%=@user_histories.action_name %></h6>
+            <h6><%=@user_history.action_name %></h6>
             <p class="plant_detail_score"> +10 points</p>
           </div>
         </div>
