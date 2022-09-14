@@ -22,11 +22,14 @@ class PagesController < ApplicationController
   end
 
   def leaves
+    @plant = Plant.find(params[:plant_id])
   end
 
   def signs_of_pest
+    @plant = Plant.find(params[:plant_id])
   end
 
   def roots_sticking_out
+    @plant = Plant.find(params[:plant_id])
   end
 end
