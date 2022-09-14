@@ -13,9 +13,9 @@ module Merit
     include Merit::PointRulesMethods
 
     def initialize
-      score 100, to: :itself, :on => 'registrations#create' do |user|
-        user.id.present?
-    end
+      # score 100, to: :itself, :on => 'registrations#create' do |user|
+      #   user.id.present?
+      # end
 
       #  model_name: 'User'
       # score 15, :on => 'reviews#create', :to => [:reviewer, :reviewed]
