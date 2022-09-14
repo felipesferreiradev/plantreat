@@ -2,18 +2,18 @@
 <div class="container garden_container">
   <%= image_tag "plantreat_logo.png", class:"garden_logo", style: "height:60px; width:60px"%>
   <div class="d-flex justify-content-center">
-    <%= cl_image_tag current_user.photo.key, style:"height: 80px; object-fit: cover; margin-top: 15px; border-radius: 5px;",id: "navbarDropdown", 'aria-haspopup': true, 'aria-expanded': false %>
+     <%= cl_image_tag current_user.photo.key, style:"height: 80px; object-fit: cover; margin-top: 15px; border-radius: 5px;",id: "navbarDropdown", 'aria-haspopup': true, 'aria-expanded': false %> %>
   </div>
   <p style="text-align:center; margin-top: 20px; font-weight: bold; font-size: 20px; color: #745D3C;">Hi, <%= current_user.username.capitalize %></p>
   <hr style="margin-top: 40px; color: #745D3C;">
   <h5 style="margin-top: 40px; margin-: 40px; text-align:left; color: #745D3C;">Your garden</h5>
 
   <%# cards %>
-  <% @plants.each do |plant| %>
-       <%= link_to plant_game_path(plant) do %>
+  <% @logs.each do |log| %>
+       <%= link_to detail_game_log_path(log) do %>
           <div class="img_label">
-              <img src="<%=plant.plants_images%>" class="plant_img" alt="">
-            <label class="top_label"><%=plant.name%></label>
+              <img src="<%=log.plant.plants_images%>" class="plant_img" alt="">
+            <label class="top_label"><%=log.plant.name%></label>
           </div>
         <% end %>
       <% end %>

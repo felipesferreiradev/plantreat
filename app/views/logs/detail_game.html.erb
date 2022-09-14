@@ -23,23 +23,42 @@
     <div class="d-flex justify-content-center mt-5">
       <div class="row d-flex gap-3">
         <div class="col d-flex flex-column align-items-center">
+         <% if @log.watered %>
+        <%= link_to add_water_log_path(@log) do %>
+            <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Water</p>
+         <% end %>
+         <% else %>
+         <%= link_to add_water_log_path(@log) do %>
             <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Water</p>
+         <% end %>
+         <% end %>
         </div>
-
         <div class="col d-flex flex-column align-items-center">
+          <%= link_to add_sun_log_path(@log) do %>
             <img class="p-2" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Sun</p>
+          <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
+          <%= link_to add_soil_log_path(@log) do %>
             <img class="p-2" src="https://img.icons8.com/external-icongeek26-flat-icongeek26/344/external-Fertile-Soil-gardening-icongeek26-flat-icongeek26.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Soil</p>
+          <% end %>
         </div>
 
         <div class="col d-flex flex-column align-items-center">
-          <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
-          <p class="plant_detail_label_content mt-1">Food</p>
+          <%= link_to add_food_log_path(@log) do %>
+            <img class="p-2" src="https://img.icons8.com/color/344/paper-bag-with-seeds.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Food</p>
+          <% end %>
+        </div>
+
+        <div class="col d-flex flex-column align-items-center">
+            <img class="p-2" src="https://img.icons8.com/fluency/344/add-camera.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Photo</p>
         </div>
 
       </div>
@@ -48,7 +67,7 @@
     <%# add new picture button %>
 
     <div class="d-flex justify-content-center mt-3 ms-5 mb-5">
-    <%= simple_form_for :photo do |f| %>
+    <%= simple_form_for :log do |f| %>
       <%= f.input :photo, as: :file, direct_upload: true, :class => "add_pic" %>
       <%= f.button :submit, "Upload" %>
     <% end %>
