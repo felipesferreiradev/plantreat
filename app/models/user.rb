@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
   has_many :logs
   has_many :plants, through: :logs, dependent: :destroy
+  has_many :user_histories
 
   validates :username, presence: true
 

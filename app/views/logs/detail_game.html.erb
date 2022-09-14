@@ -68,37 +68,17 @@
     <%#all history cards%>
 
    <div class="all_history_cards" >
-
+   <% @user_histories.each do |user_history| %>
       <div class="card history_card">
         <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
+          <p class="m-0 p-0" style="color:lightgray"><%=@user_histories.action_date %></p>
           <div class="d-flex justify-content-between mt-2">
-            <h6>Water</h6>
+            <h6><%=@user_histories.action_name %></h6>
             <p class="plant_detail_score"> +10 points</p>
           </div>
         </div>
       </div>
-
-            <div class="card history_card">
-        <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
-          <div class="d-flex justify-content-between mt-2">
-            <h6>Sun</h6>
-            <p class="plant_detail_score"> +10 points</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="card history_card">
-        <div class="card-body pb-1">
-          <p class="m-0 p-0" style="color:lightgray">09.09.2022</p>
-          <div class="d-flex justify-content-between mt-2">
-            <h6>Soil</h6>
-            <p class="plant_detail_score"> +10 points</p>
-          </div>
-        </div>
-      </div>
-
+      <% end %>
       <%#please don't remove this br br%>
       <br><br>
 
