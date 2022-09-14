@@ -31,6 +31,14 @@ class LogsController < ApplicationController
     @log.save!
     redirect_to detail_game_log_path(@log)
   end
+
+  # def remove_water
+  #   @log = Log.find(params[:id])
+  #   @log.watered = false
+  #   @log.save!
+  #   redirect_to detail_game_log_path(@log)
+  # end
+
   def add_sun
     @log = Log.find(params[:id])
     @log.light = true
@@ -38,5 +46,17 @@ class LogsController < ApplicationController
     redirect_to detail_game_log_path(@log)
   end
 
+  def add_soil
+    @log = Log.find(params[:id])
+    @log.soil_changed = true
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
 
+  def add_food
+    @log = Log.find(params[:id])
+    @log.fed = true
+    @log.save!
+    redirect_to detail_game_log_path(@log)
+  end
 end

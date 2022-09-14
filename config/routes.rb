@@ -6,7 +6,10 @@ Rails.application.routes.draw do
     member do
       get :detail_game
       get :add_water
+      # get :remove_water
       get :add_sun
+      get :add_soil
+      get :add_food
     end
   end
   resources :plants do
