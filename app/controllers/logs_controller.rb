@@ -30,7 +30,7 @@ class LogsController < ApplicationController
     @log = Log.find(params[:id])
     @log.watered = true
     @log.save!
-    @user_histories = UserHistory.create(action_name: "Water", action_date: Date.today, user: current_user, log: @log )
+    @user_histories = UserHistory.create(action_name: "Add water", action_date: Date.today, user: current_user, log: @log )
     redirect_to detail_game_log_path(@log)
   end
 
@@ -45,7 +45,7 @@ class LogsController < ApplicationController
     @log = Log.find(params[:id])
     @log.light = true
     @log.save!
-    @user_histories = UserHistory.create(action_name: "Add light", action_date: Date.today, user: current_user, log: @log )
+    @user_histories = UserHistory.create(action_name: "Check light", action_date: Date.today, user: current_user, log: @log )
     redirect_to detail_game_log_path(@log)
   end
 
@@ -53,6 +53,7 @@ class LogsController < ApplicationController
     @log = Log.find(params[:id])
     @log.soil_changed = true
     @log.save!
+    @user_histories = UserHistory.create(action_name: "Change soil", action_date: Date.today, user: current_user, log: @log )
     redirect_to detail_game_log_path(@log)
   end
 
@@ -60,6 +61,8 @@ class LogsController < ApplicationController
     @log = Log.find(params[:id])
     @log.fed = true
     @log.save!
+    @user_histories = UserHistory.create(action_name: "Add food", action_date: Date.today, user: current_user, log: @log )
+    current_user.add_points(20)
     redirect_to detail_game_log_path(@log)
   end
 end
