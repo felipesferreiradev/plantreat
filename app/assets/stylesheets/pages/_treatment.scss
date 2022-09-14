@@ -46,10 +46,16 @@
   color:#725B39;
 }
 
-.pic_1{
+.not_growing {
   border-radius: 20px;
-  background-color:  #E9FFE3;
+  border: 2px solid #E9FFE3;
 
+  // background-color:  #E9FFE3;
+}
+
+.not_growing_link, .leave_link, .roots_sticking_out_link, .signs_of_pest_link {
+  text-decoration: none;
+  font-style: normal;
 }
 
 .pic_2{
