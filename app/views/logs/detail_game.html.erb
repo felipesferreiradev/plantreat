@@ -23,12 +23,18 @@
     <div class="d-flex justify-content-center mt-5">
       <div class="row d-flex gap-3">
         <div class="col d-flex flex-column align-items-center">
+         <% if @log.watered %>
         <%= link_to add_water_log_path(@log) do %>
+            <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #E9FFE3; border-radius: 10px">
+            <p class="plant_detail_label_content mt-1">Water</p>
+         <% end %>
+         <% else %>
+         <%= link_to add_water_log_path(@log) do %>
             <img class="p-2" src="https://img.icons8.com/color/344/water.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
             <p class="plant_detail_label_content mt-1">Water</p>
          <% end %>
+         <% end %>
         </div>
-
         <div class="col d-flex flex-column align-items-center">
           <%= link_to add_sun_log_path(@log) do %>
             <img class="p-2" src="https://cdn-icons-png.flaticon.com/512/869/869869.png" style="height:50px; object-fit: cover; background-color: #F5F7F4; border-radius: 10px">
