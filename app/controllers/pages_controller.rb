@@ -18,6 +18,7 @@ class PagesController < ApplicationController
   end
 
   def not_growing
+    @plant = Plant.find(params[:plant_id])
   end
 
   def leaves
@@ -28,5 +29,4 @@ class PagesController < ApplicationController
 
   def roots_sticking_out
   end
-
 end
