@@ -6,9 +6,9 @@
   <h2 class="m-0 p-2"><%=@plant.name %></h2>
 
   <%# show points %>
-  <div>
+  <%# <div>
       <h5 class="mt-0 p-0 text-center" style="color: #725B39;">150 points</h5>
-  </div>
+  </div> %>
   <% if @log.photo.attached? %>
     <%= cl_image_tag @log.photo.key, class: "w-100", style: "height:200px; object-fit: cover" %>
   <% else %>
