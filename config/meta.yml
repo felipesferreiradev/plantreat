@@ -1,0 +1,5 @@
+meta_product_name: "Plantreat"
+meta_title: "Plantreat - The funny way to treat your plant"
+meta_description: "Our AppGame helps you to treat your plants while scoring points with your friends."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@Plantreat"   # required for Twitter Cards
