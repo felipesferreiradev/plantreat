@@ -8,9 +8,10 @@
         <%= @users_orders_by_points.each do |user| %>
           <h4> <%= user.username %></h4>
           <%= cl_image_tag current_user.photo.key, style:"height: 60px; width:60px; border-radius: 50%;", class:"mt-2"%>
-          <p class="mt-2"> <%= user.points %> </p>
+          <p class="mt-2"> <%= user.points%> </p>
         <% end %>
       </div>
+
     </div>
   </div>
 </div>
