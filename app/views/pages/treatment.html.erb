@@ -1,57 +1,40 @@
 <div class="bg_treatment">
   <%= render "shared/navbar" %>
  <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="<%=@plant.plants_images%> " class="d-block w-100 rounded" style="object-fit: cover; height: 250px">
-      </div>
-      <div class="carousel-item">
-        <img src="<%=@plant.plant_image_2%>" class="d-block w-100 rounded" style="object-fit: cover; height: 250px">
-      </div>
-      <div class="carousel-item">
-        <img src="<%=@plant.plant_image_3%>" class="d-block w-100 rounded" style="object-fit: cover; height: 250px">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <h2 class="q">We are sorry to hear that your plant is sick!</h2>
+
   <h2 class="q_sub">Let Us help you!</h2>
+
+  <% if @log.photo.attached? %>
+    <%= cl_image_tag @log.photo.key, class: "w-100", style: "height:200px; object-fit: cover" %>
+  <% else %>
+    <img class="w-100" src="<%=@plant.plants_images %>"  >
+  <% end %>
+ <br>
   <div class="signs">
-  <div class="pic_1">
-    <%= link_to not_growing_path(:plant_id => @plant.id), class: "not_growing_link" do%>
-      <img src="https://cdn-icons-png.flaticon.com/512/4772/4772398.png" class="not_growing"alt="">
-      <h3>growth</h3>
-    <% end %>
-    </div>
-    <div class="pic_2">
-    <%= link_to leaves_path(:plant_id => @plant.id), class: "leave_link" do%>
-
-      <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="not_growing" alt="">
-      <h1>colour</h1>
-    <% end %>
-    </div>
-    <div class="pic_3">
-    <%= link_to roots_sticking_out_path(:plant_id => @plant.id), class: "roots_sticking_out_link" do%>
-
-      <img src="https://cdn-icons-png.flaticon.com/512/3239/3239349.png" class="not_growing" alt="">
-      <h1>roots</h1>
-    <% end %>
-    </div>
-    <div class= "pic_4">
-    <%= link_to signs_of_pest_path(:plant_id => @plant.id), class: "signs_of_pest_link" do%>
-
-      <img src="https://cdn-icons-png.flaticon.com/512/2674/2674493.png" class="not_growing" alt="">
-      <h1>pests</h1>
-    <% end %>
+    <div class="pic_1">
+      <%= link_to not_growing_path(:plant_id => @plant.id), class: "not_growing_link" do%>
+        <img src="https://cdn-icons-png.flaticon.com/512/4772/4772398.png" class="not_growing"alt="">
+        <p class="signs_title">growth</p>
+      <% end %>
+      </div>
+      <div class="pic_2">
+      <%= link_to leaves_path(:plant_id => @plant.id), class: "leave_link" do%>
+        <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="not_growing" alt="">
+        <p class="signs_title">colour</p>
+      <% end %>
+      </div>
+      <div class="pic_3">
+      <%= link_to roots_sticking_out_path(:plant_id => @plant.id), class: "roots_sticking_out_link" do%>
+        <img src="https://cdn-icons-png.flaticon.com/512/3239/3239349.png" class="not_growing" alt="">
+        <p class="signs_title">roots</p>
+      <% end %>
+      </div>
+      <div class= "pic_4">
+      <%= link_to signs_of_pest_path(:plant_id => @plant.id), class: "signs_of_pest_link" do%>
+        <img src="https://cdn-icons-png.flaticon.com/512/2674/2674493.png" class="not_growing" alt="">
+        <p class="signs_title">pests</p>
+      <% end %>
     </div>
   </div>
 </div>
