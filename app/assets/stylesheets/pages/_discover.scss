@@ -65,6 +65,7 @@
   height: 300px;
   width: 300px;
   border-radius: 50px;
+  margin-bottom: 25px;
 }
 
 .img_label {
@@ -76,28 +77,24 @@
 
 .bottom_label{
 position: absolute;
-bottom: 7px;
-left: 56px;
+bottom: 25px;
+left: 69px;
 background-color: #E9FFE3;
 // padding-left: 35px;
 border-radius: 50px;
 color:#725B39;
-padding: 10px;
 opacity: 0.8;
-padding-left: 23px;
-padding-right:12px;
+padding: 8px,
 }
 
 .top_label{
 position: absolute;
 background-color: #E9FFE3;
-top: 19px;
-left: 38px;
+left: 69px;
 border-radius: 50px;
 color:#725B39;
 opacity: 0.8;
-padding-left: 22px;
-    padding-right: 22px;
+padding: 5px 10px;
 }
 
 // .plant_icon1{
@@ -166,7 +163,7 @@ padding-left: 22px;
   width: 280px;
   background-color: #E9FFE3;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .search_bar input .btn {
@@ -176,6 +173,7 @@ padding-left: 22px;
   border: none;
   width: 30%;
   font-size: small;
+  border-radius: 10px;
 }
 .indoor_logo {
   height:50px;
