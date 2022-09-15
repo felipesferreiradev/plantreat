@@ -9,18 +9,21 @@
   <div>
       <h5 class="mt-0 p-0 text-center" style="color: #725B39;">150 points</h5>
   </div>
-
-  <img class="w-100" src="<%=@plant.plants_images %>"  style="height:200px; object-fit: cover">
+  <% if @log.photo.attached? %>
+    <%= cl_image_tag @log.photo.key, class: "w-100", style: "height:200px; object-fit: cover" %>
+  <% else %>
+    <img class="w-100" src="<%=@plant.plants_images %>"  >
+  <% end %>
 
 
   <%#sick button  %>
 
-  <div class = "d-flex justify-content-center">
+  <div class = "d-flex justify-content-center mt-2">
     <%= link_to 'My plant looks sick', treatment_path(@plant), class:"btn mt-1", id:"btn-plant-sick"%>
   </div>
 
   <%#show treatment options  %>
-  <div class="d-flex justify-content-center mt-5">
+  <div class="d-flex justify-content-center">
     <div class="row d-flex gap-3">
       <div class="col d-flex flex-column align-items-center">
         <% if @log.watered%>
