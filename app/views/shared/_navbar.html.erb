@@ -8,7 +8,7 @@
         <img src="https://img.icons8.com/small/344/ranking.png" alt="" style="width:30px; height:30px; margin-left:20px">
       <% end %>
       <% unless current_user.logs.empty? %>
-        <%= link_to detail_game_log_path(@log) do%>
+        <%= link_to detail_game_log_path(@navbar_log) do%>
           <img src="https://img.icons8.com/windows/344/potted-plant.png" alt="" style="width:30px; height:30px; margin-left:20px">
         <% end %>
       <% end %>

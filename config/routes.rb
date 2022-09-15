@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
-  resources :logs, only: :index do
+  resources :logs, only: [:index, :update] do
     member do
       get :detail_game
       get :add_water

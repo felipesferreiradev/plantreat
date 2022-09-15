@@ -1,6 +1,6 @@
 .bg_treatment{
   background-color: white;
-  height: 100vh;
+  // height: 100vh;
 }
 .signs{
 
@@ -11,22 +11,29 @@
 }
 
 .not_growing{
-
+  border-radius: 20px;
+  border: 2px solid #E9FFE3;
   width: 50px;
   height: 50px;
 }
 
 .pests{
+  border-radius: 20px;
+  border: 2px solid #E9FFE3;
   width: 50px;
   height: 50px;
 }
 
 .leaves{
+  border-radius: 20px;
+  border: 2px solid #E9FFE3;
   width: 50px;
   height: 50px;
 }
 
 .roots{
+  border-radius: 20px;
+  border: 2px solid #E9FFE3;
   width: 50px;
   height: 50px;
 }
@@ -44,34 +51,14 @@
 .q{
   margin-top: 16px;
   color:#725B39;
+  font-weight: bold;
 }
 
-.not_growing {
-  border-radius: 20px;
-  border: 2px solid #E9FFE3;
-
-  // background-color:  #E9FFE3;
+.q_sub{
+  font-weight: medium;
 }
 
 .not_growing_link, .leave_link, .roots_sticking_out_link, .signs_of_pest_link {
   text-decoration: none;
   font-style: normal;
-}
-
-.pic_2{
-  border-radius: 20px;
-  background-color:  #E9FFE3;
-
-}
-
-.pic_3{
-  border-radius: 20px;
-  background-color:  #E9FFE3;
-
-}
-
-.pic_4{
-  border-radius: 20px;
-  background-color:  #E9FFE3;
-
 }

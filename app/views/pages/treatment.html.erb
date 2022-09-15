@@ -24,30 +24,33 @@
   </div>
 
   <h2 class="q">We are sorry to hear that your plant is sick!</h2>
-  <h2 class="q">Let Us help you!</h2>
+  <h2 class="q_sub">Let Us help you!</h2>
   <div class="signs">
   <div class="pic_1">
     <%= link_to not_growing_path(:plant_id => @plant.id), class: "not_growing_link" do%>
       <img src="https://cdn-icons-png.flaticon.com/512/4772/4772398.png" class="not_growing"alt="">
-      <h3>not growing?</h3>
+      <h3>growth</h3>
     <% end %>
     </div>
     <div class="pic_2">
     <%= link_to leaves_path(:plant_id => @plant.id), class: "leave_link" do%>
-      <h1>colour changing?</h1>
-      <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="leaves" alt="">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/1147/1147560.png" class="not_growing" alt="">
+      <h1>colour</h1>
     <% end %>
     </div>
     <div class="pic_3">
     <%= link_to roots_sticking_out_path(:plant_id => @plant.id), class: "roots_sticking_out_link" do%>
-      <h1>roots sticking out?</h1>
-      <img src="https://cdn-icons-png.flaticon.com/512/3239/3239349.png" class="roots" alt="">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/3239/3239349.png" class="not_growing" alt="">
+      <h1>roots</h1>
     <% end %>
     </div>
     <div class= "pic_4">
     <%= link_to signs_of_pest_path(:plant_id => @plant.id), class: "signs_of_pest_link" do%>
-      <h1>signs of pests?</h1>
-      <img src="https://cdn-icons-png.flaticon.com/512/2674/2674493.png" class="pests" alt="">
+
+      <img src="https://cdn-icons-png.flaticon.com/512/2674/2674493.png" class="not_growing" alt="">
+      <h1>pests</h1>
     <% end %>
     </div>
   </div>
