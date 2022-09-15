@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_one_attached :photo
+  validates :photo, presence: true
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
