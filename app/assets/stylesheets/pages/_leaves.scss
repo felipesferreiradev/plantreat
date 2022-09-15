@@ -1,13 +1,13 @@
 .bg_leaves{
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 30px;
 }
 
 .subtitle_leaves{
   color: #725B39;
   font-size: large;
   margin-bottom: 30px;
-  opacity: 0.6;
 }
 
 .title_leaves{
@@ -15,7 +15,7 @@
   font-size: x-large;
   margin-top: 41px;
   font-weight: bold;
-  opacity: 0.6;
+  margin-bottom: 30px;
 }
 
 .description_leaves{
@@ -24,7 +24,10 @@
   font-size: medium;
   border-radius: 20px;
   padding: 20px;
-  margin-top: 60px;}
+  margin-top: 60px;
+  text-align: justify;
+  line-height: 24px;
+}
 
 
 .leaves_image{
