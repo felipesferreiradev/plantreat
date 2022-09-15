@@ -26,7 +26,7 @@ module Merit
         log.fed
       end
       score 15, to: :user, on: 'logs#update' do |log|
-        log.photo.attached?
+        log.photos.attached?
       end
 
 

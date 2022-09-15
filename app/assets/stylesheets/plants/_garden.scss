@@ -1,8 +1,10 @@
 .garden_container {
   background: white;
-  height: 100vh;
+  min-height: 100vh;
   padding: 15px;
   overflow-y: scroll;
+  margin-bottom: 50px;
+
 }
 
 .garden_card {

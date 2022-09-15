@@ -2,11 +2,12 @@
 <div class="container garden_container">
   <%= image_tag "plantreat_logo.png", class:"garden_logo", style: "height:60px; width:60px"%>
   <div class="d-flex justify-content-center">
-     <%= cl_image_tag current_user.photo.key, style:"height: 80px; object-fit: cover; margin-top: 15px; border-radius: 5px;",id: "navbarDropdown", 'aria-haspopup': true, 'aria-expanded': false %> %>
+     <%= cl_image_tag current_user.photo.key, style:"height: 80px; object-fit: cover; margin-top: 15px; border-radius: 5px;",id: "navbarDropdown", 'aria-haspopup': true, 'aria-expanded': false %>
+
   </div>
   <p style="text-align:center; margin-top: 20px; font-weight: bold; font-size: 20px; color: #745D3C;">Hi, <%= current_user.username.capitalize %></p>
+  <h5 style="margin-top: 20px; text-align:center; color: #745D3C;">Welcome to your garden</h5>
   <hr style="margin-top: 40px; color: #745D3C;">
-  <h5 style="margin-top: 40px; margin-: 40px; text-align:left; color: #745D3C;">Your garden</h5>
 
   <%# cards %>
   <% @logs.each do |log| %>
@@ -18,9 +19,11 @@
         <% end %>
       <% end %>
 
-  <div class= "d-flex align-items-center flex-column gap-3" style="margin-top:130px">
+  <div class= "d-flex align-items-center flex-column gap-3" style="margin-top:50px">
     <%= button_to "Edit profile", edit_user_registration_path, data: {turbo_method: :get}, method: :get, class: "nav-link btn btn-primary edit-profile-btn", style:"padding:6px 20px" %>
-    <%= button_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, method: :delete, class: "nav-link btn btn-primary", style:"padding:6px 30px" %>
+    <%= button_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, method: :delete, class: "nav-link btn btn-primary m-0", style:"padding:6px 30px" %>
   </div>
+
+  <br><br>
 
 </div>

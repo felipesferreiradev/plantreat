@@ -1,11 +1,11 @@
 <div class="question-bg">
   <%= render "shared/navbar" %>
   <%= image_tag "plantreat_logo.png", :class => "signup_logo"%>
-  <div class="question1-bg d-flex flex-column align-items-center p-5">
-    <h3 class="q-title mt-0">We have some questions for you</h3>
-    <form action="<%= recommendation_path %>"  method="GET" class="d-flex flex-column align-items-center">
+  <div class="question1-bg d-flex flex-column align-items-center mt-5 p-5">
+    <h3 class="q-title mt-0">We have some questions</h3>
+    <form action="<%= recommendation_path %>"  method="GET" class="d-flex flex-column align-items-left mt-5">
 
-      <label for="water" class="mt-4" style="color: #725B39">How many times would like to water your plant</label>
+      <label for="water" class="mt-4" style="color: #725B39">How many times would like to water your plant?</label>
       <select name="water" class="form-select question-form-select" aria-label="Default select example">
         <option selected value="Light Watering">Light Watering</option>
         <option value="Regular Watering">Regular Watering</option>
