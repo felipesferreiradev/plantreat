@@ -1,5 +1,7 @@
 .bg_discover{
   background: white;
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 .img_discover{
   height: 100px;
@@ -24,10 +26,12 @@
 }
 
 .subtitle_discover{
-  font-size: smaller;
-  padding: 15px;
+  font-size: medium;
+  padding: 10px;
   align-items: flex-start;
   color:#725B39;
+  margin-top: 5px;
+  font-weight: 400;
 }
 
 .icons{
@@ -54,17 +58,17 @@
 }
 .popular_plants{
   color:#725B39;
-  font-size: smaller;
-  padding: 15px;
+  font-size: medium;
+  padding: 10px;
   align-items: flex-start;
-  margin-top: 17px;
-
+  font-weight: 400;
 
 }
 .plant_img{
   height: 300px;
-  width: 300px;
+  width: 100%;
   border-radius: 50px;
+  margin-bottom:15px;
 }
 
 .img_label {
@@ -150,7 +154,7 @@ padding-left: 22px;
 
 .search_bar {
   justify-content: space-between;
-  padding-left: 10px;
+  padding: 0 5px;
 
 }
 
@@ -163,7 +167,7 @@ padding-left: 22px;
 .search_bar input#query {
   padding: 20px;
   height: 30px;
-  width: 280px;
+  width: 270px;
   background-color: #E9FFE3;
   border: none;
   border-radius: 20px;

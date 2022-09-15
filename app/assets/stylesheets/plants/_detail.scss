@@ -1,8 +1,8 @@
 .plant_detail_container {
   background-color: white;
-  position: absolute;
   padding: 15px;
   overflow-y: scroll;
+  min-height: 100vh;
 }
 
 .plant_detail_label_content {
