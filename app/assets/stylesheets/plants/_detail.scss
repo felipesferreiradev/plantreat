@@ -3,6 +3,8 @@
   position: absolute;
   padding: 15px;
   overflow-y: scroll;
+  min-height: 100%;
+  margin-bottom: 50px;
 }
 
 .plant_detail_label_content {
@@ -33,4 +35,9 @@
     box-shadow: 1px 1px 5px  lightgray;
     display: flex;
     margin-top: 14px;
+}
+.score_title {
+  color: #725B39;
+  font-size: 16px;
+  font-weight: bold;
 }
