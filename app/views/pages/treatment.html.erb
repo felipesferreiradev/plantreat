@@ -5,8 +5,8 @@
 
   <h2 class="q_sub">Let Us help you!</h2>
 
-  <% if @log.photo.attached? %>
-    <%= cl_image_tag @log.photo.key, class: "w-100", style: "height:200px; object-fit: cover" %>
+  <% if @log.photos.attached? %>
+    <%= cl_image_tag @log.photos.first.key, class: "w-100", style: "height:200px; object-fit: cover" %>
   <% else %>
     <img class="w-100" src="<%=@plant.plants_images %>"  >
   <% end %>

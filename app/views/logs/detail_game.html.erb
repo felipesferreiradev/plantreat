@@ -3,7 +3,7 @@
 <div class="container plant_detail_container" data-controller="display-input">
 
   <%= image_tag "plantreat_logo.png", :class => "plant_show_logo", style: "height:60px; width:60px"%>
-  <h2 class="m-0 p-2"><%=@plant.name %></h2>
+  <h2 class="mb-5 p-2"><%=@plant.name %></h2>
 
   <%# show points %>
 
@@ -128,8 +128,8 @@
 
   <%#history %>
   <div>
-      <h3 class="mt-3" style="color: #725B39;">Treatment history</h3>
-      <h3>Your score: <%= current_user.points %> points</h3>
+      <h3 class="mt-3" style="color: #725B39;">Logs</h3>
+      <h3 class="score_title">Score: <%= current_user.points %> points</h3>
   </div>
 
   <%#all history cards%>

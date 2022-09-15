@@ -1,6 +1,7 @@
 .bg_not_growing{
   background-color: white;
   height: 100vh;
+  min-height: 100%;
 }
 
 .subtitle_not_growing{
@@ -16,15 +17,19 @@ font-weight: bold;
   font-size: x-large;
   margin-top: 41px;
   font-weight: bold;
+  margin-bottom: 35px;
 }
 
 .description_not_growing{
+  text-align: justify;
   background-color:  #E9FFE3;
   color: #725B39;
   font-size: medium;
   border-radius: 20px;
   padding: 10px;
-  margin-top: 60px;}
+  margin-top: 60px;
+  line-height: 24px;
+}
 
 
 .not_growing{
@@ -32,5 +37,5 @@ font-weight: bold;
   height: 100px;
   margin: 0px auto;
   display: block;
-  border-radius: 14px;
+  border-radius: 4px;
 }
