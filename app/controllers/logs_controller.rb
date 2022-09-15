@@ -96,6 +96,6 @@ class LogsController < ApplicationController
   private
 
   def log_params
-    params.require(:log).permit(:photo)
+    params.require(:log).permit(photos: [])
   end
 end
