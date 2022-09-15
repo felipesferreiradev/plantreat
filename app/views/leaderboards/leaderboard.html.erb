@@ -1,5 +1,7 @@
 <%= render "shared/navbar" %>
-<div class="container leaderboard_container">
+<div class="leaderboard_container">
+
+<div class="container">
   <%= image_tag "plantreat_logo.png", class:"garden_logo", style: "height:60px; width:60px"%>
   <h1 class="text-center" style="font-weight:bold">Plant master</h1>
 
@@ -23,13 +25,13 @@
     <div class="d-flex justify-content-between p-3 second_and_third_player">
       <div class="d-flex flex-column align-items-center">
           <h4> <%= @users_orders_by_points[1].username.capitalize %></h4>
-          <%= cl_image_tag @users_orders_by_points[1].photo.key, style:"height: 60px; width:60px; border-radius: 50%;"%>
+          <%= cl_image_tag @users_orders_by_points[1].photo.key, style:"height: 80px; width:80px; border-radius: 50%;"%>
           <p class="m-1"> <%= @users_orders_by_points[1].points %> </p>
       </div>
 
       <div class="d-flex flex-column align-items-center">
           <h4> <%= @users_orders_by_points[2].username.capitalize %></h4>
-          <%= cl_image_tag @users_orders_by_points[2].photo.key, style:"height: 60px; width:60px; border-radius: 50%;"%>
+          <%= cl_image_tag @users_orders_by_points[2].photo.key, style:"height: 80px; width:80px; border-radius: 50%;"%>
           <p class="m-1"> <%= @users_orders_by_points[2].points %> </p>
       </div>
     </div>
@@ -37,7 +39,7 @@
       <%# the rest %>
       <%# no.4 %>
 
-    <div class="d-flex flex-column gap-3 p-2">
+    <div class="d-flex flex-column gap-3 p-2 rest_users">
     <% @users_left = @users_orders_by_points.drop(3) %>
       <% @users_left.each_with_index do |user, index| %>
         <div class="d-flex justify-content-between">
@@ -55,4 +57,5 @@
 
     </div>
   </div>
+</div>
 </div>
