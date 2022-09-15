@@ -1,12 +1,12 @@
 .question-form-select {
-  border-radius: 20px;
+  border-radius: 10px;
   background-color: #E9FFE3;
   border: none;
   color: #725B39;
 }
 .question-bg {
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 input[type=submit] {
@@ -20,7 +20,7 @@ input[type=submit] {
   margin: 0;
   color: #C8D264;
   background-color: #4C6A3F;
-  border-radius: 15px;
+  border-radius: 5px;
   border: none;
   padding-left: 30px;
   padding-right: 30px;
@@ -37,4 +37,5 @@ input[type=submit]:hover {
   color: #725B39;
   justify-content: center;
   font-size: 25px;
+  font-weight: bold;
 }
