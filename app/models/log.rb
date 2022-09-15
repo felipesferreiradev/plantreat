@@ -1,7 +1,7 @@
 class Log < ApplicationRecord
   belongs_to :user
   belongs_to :plant
-  has_one_attached :photo
+  has_many_attached :photos
   has_many :user_histories
 
   def log_is_watered?
