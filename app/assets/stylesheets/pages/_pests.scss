@@ -1,13 +1,13 @@
 .bg_pests{
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 40px;
 }
 
 .subtitle_pests{
   color: #725B39;
   font-size: large;
   margin-bottom: 30px;
-  opacity: 0.6;
 }
 
 .title_pests{
@@ -15,16 +15,18 @@
   font-size: x-large;
   margin-top: 41px;
   font-weight: bold;
-  opacity: 0.6;
+  margin-bottom: 40px;
 }
 
 .description_pests{
-  background-color:  #E9FFE3;
+  background-color:#E9FFE3;
   color: #725B39;
   font-size: medium;
   border-radius: 20px;
   padding: 8px;
-  margin-top: 16px;
+  margin-top: 24px;
+  text-align: justify;
+  line-height: 24px;
 }
 
 

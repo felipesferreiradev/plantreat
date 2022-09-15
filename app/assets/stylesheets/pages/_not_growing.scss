@@ -1,7 +1,7 @@
 .bg_not_growing{
   background-color: white;
-  height: 100vh;
-  min-height: 100%;
+  min-height: 100vh;
+  margin-bottom: 30px;
 }
 
 .subtitle_not_growing{
@@ -9,7 +9,6 @@ color: #725B39;
 font-size: x-large;
 margin: 30px;
 font-weight: bold;
-
 }
 
 .title_not_growing{
@@ -29,6 +28,7 @@ font-weight: bold;
   padding: 10px;
   margin-top: 60px;
   line-height: 24px;
+  text-align: justify;
 }
 
 
