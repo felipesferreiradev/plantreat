@@ -14,7 +14,7 @@
       <% end %>
           <div class="d-flex flex-column align-items-center first_user">
           <%= image_tag "crown.png", class:"crown_pic m-0"%>
-          <%= cl_image_tag @users_orders_by_points[0].photo.key, style:"height: 60px; width:60px; border-radius: 50%;  border: yellow solid 8px; box-sizing: content-box"%>
+          <%= cl_image_tag @users_orders_by_points[0].photo.key, style:"height: 100px; width:100px; border-radius: 50%;  border: yellow solid 8px; box-sizing: content-box"%>
           <p class="m-2"> <%= @users_orders_by_points[0].points %></p>
           </div>
       </div>
@@ -43,13 +43,8 @@
         <div class="d-flex justify-content-between">
         <div class="d-flex align-items-center gap-3">
           <h3><%=index + 4%></h3>
-<<<<<<< HEAD
-           <%= cl_image_tag current_user.photo.key, style:"height: 60px; width:60px; border-radius: 50%;", class:"mt-2"%>
-           <h4> <%= user.username %></h4>
-=======
            <%= cl_image_tag user.photo.key, style:"height: 60px; width:60px; border-radius: 50%;"%>
            <h4> <%= user.username.capitalize %></h4>
->>>>>>> master
         </div>
            <div>
               <p class="mt-3"> <%= user.points%></p>
