@@ -17,14 +17,18 @@ module Merit
         log.watered
       end
       score 10, to: :user, on: 'logs#add_sun' do |log|
-        log.watered
+        log.light
       end
       score 30, to: :user, on: 'logs#add_soil' do |log|
-        log.watered
+        log.soil_changed
       end
       score 20, to: :user, on: 'logs#add_food' do |log|
-        log.watered
+        log.fed
       end
+      score 15, to: :user, on: 'logs#update' do |log|
+        log.photo.attached?
+      end
+
 
       #  model_name: 'User'
       # score 15, :on => 'reviews#create', :to => [:reviewer, :reviewed]

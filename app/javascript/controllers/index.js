@@ -4,5 +4,8 @@
 
 import { application } from "./application"
 
+import DisplayInputController from "./display_input_controller"
+application.register("display-input", DisplayInputController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
