@@ -1,35 +1,37 @@
-.bg_signs_of_pests{
+.bg_pests{
   background-color: white;
   height: 100vh;
 }
 
-.subtitle_signs_of_pests{
-color: #725B39;
-font-size: x-large;
-margin: 30px;
-font-weight: bold;
-
+.subtitle_pests{
+  color: #725B39;
+  font-size: large;
+  margin-bottom: 30px;
+  opacity: 0.6;
 }
 
-.title_signs_of_pests{
+.title_pests{
   color:#725B39;
   font-size: x-large;
   margin-top: 41px;
   font-weight: bold;
+  opacity: 0.6;
 }
 
-.description_signs_of_pests{
+.description_pests{
   background-color:  #E9FFE3;
   color: #725B39;
   font-size: medium;
   border-radius: 20px;
-  padding: 10px;
-  margin-top: 4px;}
+  padding: 20px;
+  margin-top: 60px;}
 
 
-.signs_of_pests{
-  width: 100px;
-  height: 100px;
+.pests_image{
+  width: 100%;
+  height: 100%;
   margin: 0px auto;
   display: block;
+  border-radius: 14px;
+
 }
