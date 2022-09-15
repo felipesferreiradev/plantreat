@@ -1,6 +1,7 @@
 .bg_not_growing{
   background-color: white;
   height: 100vh;
+  min-height: 100%;
 }
 
 .subtitle_not_growing{
@@ -19,6 +20,8 @@ font-weight: bold;
 }
 
 .description_not_growing{
+
+  text-align: justify;
   background-color:  #E9FFE3;
   color: #725B39;
   font-size: medium;
@@ -32,5 +35,5 @@ font-weight: bold;
   height: 100px;
   margin: 0px auto;
   display: block;
-  border-radius: 14px;
+  border-radius: 4px;
 }
