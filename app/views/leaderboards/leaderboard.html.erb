@@ -1,16 +1,56 @@
 <%= render "shared/navbar" %>
-<div class="container leaderboard_container text-center">
+<div class="container leaderboard_container">
   <%= image_tag "plantreat_logo.png", class:"garden_logo", style: "height:60px; width:60px"%>
-  <h1 style="font-weight:bold">Plant master</h1>
-  <div>
+  <h1 class="text-center" style="font-weight:bold">Plant master</h1>
+
+    <%# top 3  %>
+
     <div>
       <div class="d-flex flex-column align-items-center">
-        <%= @users_orders_by_points.each do |user| %>
-          <h4> <%= user.username %></h4>
-          <%= cl_image_tag current_user.photo.key, style:"height: 60px; width:60px; border-radius: 50%;", class:"mt-2"%>
-          <p class="mt-2"> <%= user.points%> </p>
-        <% end %>
+          <h4> <%= @users_orders_by_points[0].username %></h4>
+          <div class="d-flex flex-column align-items-center first_user">
+          <%= image_tag "crown.png", class:"crown_pic m-0"%>
+          <%= cl_image_tag @users_orders_by_points[0].photo.key, style:"height: 60px; width:60px; border-radius: 50%;  border: yellow solid 8px; box-sizing: content-box"%>
+          <p class="m-0"> <%= @users_orders_by_points[0].points %></p>
+          </div>
       </div>
+    </div>
+
+    <div class="d-flex justify-content-between p-3">
+      <div class="d-flex flex-column align-items-center">
+          <h4> <%= @users_orders_by_points[1].username %></h4>
+          <%= cl_image_tag @users_orders_by_points[1].photo.key, style:"height: 60px; width:60px; border-radius: 50%;"%>
+          <p> <%= @users_orders_by_points[1].points %> </p>
+      </div>
+
+      <div class="d-flex flex-column align-items-center">
+          <h4> <%= @users_orders_by_points[2].username %></h4>
+          <%= cl_image_tag @users_orders_by_points[2].photo.key, style:"height: 60px; width:60px; border-radius: 50%;"%>
+          <p> <%= @users_orders_by_points[2].points %> </p>
+      </div>
+    </div>
+
+      <%# the rest %>
+      <%# no.4 %>
+
+    <div class="d-flex flex-column gap-3 p-2 mt-3">
+    <% @users_left = @users_orders_by_points.drop(3) %>
+      <% @users_left.each_with_index do |user, index| %>
+        <div class="d-flex justify-content-between">
+        <div class="d-flex align-items-center gap-3">
+          <h3><%=index + 4%></h3>
+           <%= cl_image_tag current_user.photo.key, style:"height: 60px; width:60px; border-radius: 50%;", class:"mt-2"%>
+           <h4> <%= user.username %></h4>
+
+        </div>
+           <div>
+              <p class="mt-2"> <%= user.points%> </p>
+           </div>
+        </div>
+         <% end %>
+      </div>
+
+
 
     </div>
   </div>

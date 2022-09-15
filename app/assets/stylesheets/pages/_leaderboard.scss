@@ -3,3 +3,17 @@
   height: 100vh;
   background-image: url('leaderboard_bg.png');
 }
+
+.crown_pic {
+  height:40px;
+  width: 40px;
+  position: relative;
+  top: 18px;
+  left: 25px;
+  transform: rotate(30deg);
+};
+
+.first_user {
+  position: relative;
+  top: -20px;
+}

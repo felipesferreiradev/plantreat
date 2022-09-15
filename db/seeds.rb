@@ -627,4 +627,6 @@ climbing_rose_white = Plant.new(
 )
 climbing_rose_white.save!
 
+
+
 puts "Seeding done."
