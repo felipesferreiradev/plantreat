@@ -1,64 +1,58 @@
 .bg_treatment{
   background-color: white;
-  // height: 100vh;
+  min-height: 100vh;
+  margin-bottom: 50px
 }
 .signs{
-
   color: #725B39;
-  font-size: smaller;
   border-radius: 50px;
-
-}
-
-.not_growing{
-  border-radius: 20px;
-  border: 2px solid #E9FFE3;
-  width: 50px;
-  height: 50px;
-}
-
-.pests{
-  border-radius: 20px;
-  border: 2px solid #E9FFE3;
-  width: 50px;
-  height: 50px;
-}
-
-.leaves{
-  border-radius: 20px;
-  border: 2px solid #E9FFE3;
-  width: 50px;
-  height: 50px;
-}
-
-.roots{
-  border-radius: 20px;
-  border: 2px solid #E9FFE3;
-  width: 50px;
-  height: 50px;
-}
-
-
-.signs{
-  font-size: smaller;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   text-align: center;
   padding: 14px;
+  margin-top: 25px;
 }
 
-.q{
-  margin-top: 16px;
-  color:#725B39;
-  font-weight: bold;
-}
+// .not_growing{
+//   border-radius: 20px;
+//   border: 2px solid #E9FFE3;
+//   width: 50px;
+//   height: 50px;
+// }
+
+// .pests{
+//   border-radius: 20px;
+//   border: 2px solid #E9FFE3;
+//   width: 50px;
+//   height: 50px;
+// }
+
+// .leaves{
+//   border-radius: 20px;
+//   border: 2px solid #E9FFE3;
+//   width: 50px;
+//   height: 50px;
+// }
+
+// .roots{
+//   border-radius: 20px;
+//   border: 2px solid #E9FFE3;
+//   width: 50px;
+//   height: 50px;
+// }
 
 .q_sub{
+  margin-top: 25px;
   font-weight: medium;
 }
 
 .not_growing_link, .leave_link, .roots_sticking_out_link, .signs_of_pest_link {
   text-decoration: none;
   font-style: normal;
+}
+
+.signs_title{
+  font-size: 20px;
+  color: #725B39;
 }
