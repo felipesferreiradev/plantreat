@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
   before_action :set_plant, unless: :devise_controller?
   before_action :configure_permitted_parameters, if: :devise_controller?
 
+  def default_url_options
+    { host: ENV["www.plantreat.lol"] || "localhost:3000" }
+  end
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:username, :photo])
 
